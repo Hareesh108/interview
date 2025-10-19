@@ -3,7 +3,7 @@
 ## 🎯 Objective
 
 Learn how to design, architect, and scale frontend systems for large, complex, and high-performance applications.  
-Understand **architecture patterns**, **performance optimization**, **state management**, **code organization**, **scalability**, and **deployment strategies**.
+Understand **architecture patterns**, **state management**, **performance optimization**, **code organization**, **security**, **observability**, and **deployment strategies**.
 
 ---
 
@@ -13,8 +13,8 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 - ✅ Definition & Purpose  
 - ✅ Difference between UI Design and System Design  
-- ✅ How it connects with Backend & DevOps  
-- ✅ Example: Designing YouTube frontend architecture
+- ✅ Relationship with Backend & DevOps  
+- ✅ Example: Designing YouTube’s Frontend Architecture
 
 ### 1.2 Core Principles
 
@@ -24,7 +24,8 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] Reliability  
 - [ ] Accessibility  
 - [ ] Security (XSS, CSRF, etc.)  
-- [ ] UX-driven architecture decisions
+- [ ] UX-driven architectural decisions  
+- [ ] Resilience & graceful degradation  
 
 ---
 
@@ -34,29 +35,28 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 - [ ] Smart vs Dumb Components  
 - [ ] Presentational vs Container Components  
-- [ ] Hooks-based patterns  
+- [ ] Hooks-based Patterns  
 - [ ] Compound Components  
 - [ ] Controlled vs Uncontrolled Components  
-- [ ] Frontend clean architecture principles  
-- [ ] Separation of concerns (UI, business logic, data fetching)  
-- [ ] Feature flags and A/B testing strategies  
+- [ ] Clean Architecture principles for frontends  
+- [ ] Separation of concerns (UI, business logic, data)  
+- [ ] Feature Flags & A/B Testing Strategies  
 
 ### 2.2 Design Patterns in Frontend
 
 - [ ] MVC, MVVM, Flux  
-- [ ] Pub/Sub pattern  
-- [ ] Observer pattern  
-- [ ] Singleton pattern  
-- [ ] Factory pattern  
-- [ ] Proxy pattern  
-- [ ] Strategy pattern (for UI logic)
+- [ ] Observer / Pub-Sub Pattern  
+- [ ] Singleton / Factory / Proxy  
+- [ ] Strategy pattern for UI logic  
+- [ ] Render Props & HOCs (legacy but useful for understanding)  
 
 ### 2.3 Modular Architecture
 
 - [ ] Folder structure design  
-- [ ] Feature-based vs Layer-based structures  
+- [ ] Feature-based vs Layer-based architecture  
 - [ ] Monorepo vs Polyrepo  
-- [ ] Shared component libraries (e.g., with Nx or Turborepo)
+- [ ] Shared component libraries (Nx, Turborepo)  
+- [ ] Dependency graph visualization tools  
 
 ---
 
@@ -67,23 +67,25 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] UI State  
 - [ ] Server State  
 - [ ] Global App State  
-- [ ] URL State  
+- [ ] URL / Navigation State  
+- [ ] Session / Cache State  
 
 ### 3.2 State Management Approaches
 
 - [ ] React Context API  
-- [ ] Redux Toolkit  
-- [ ] Zustand, Jotai, Recoil  
-- [ ] Query libraries — React Query, SWR  
-- [ ] GraphQL with Apollo/Urql  
-- [ ] State Normalization & Caching Strategies  
+- [ ] Redux Toolkit (RTK Query)  
+- [ ] Zustand / Jotai / Recoil  
+- [ ] React Query / TanStack Query / SWR  
+- [ ] GraphQL Clients (Apollo, Urql)  
+- [ ] State Normalization & Caching  
 
 ### 3.3 Scaling State
 
 - [ ] Splitting stores by domain  
-- [ ] Lazy loading states  
-- [ ] Optimistic updates  
+- [ ] Lazy loading stores  
+- [ ] Optimistic updates & rollback  
 - [ ] Handling race conditions  
+- [ ] Infinite scrolling and pagination state  
 
 ---
 
@@ -94,32 +96,34 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] Reconciliation & Virtual DOM  
 - [ ] Memoization (useMemo, useCallback)  
 - [ ] React Compiler & automatic memoization  
+- [ ] React Server Components (RSC)  
 - [ ] Windowing (react-window, react-virtualized)  
-- [ ] Avoiding unnecessary renders  
-- [ ] Rendering metrics measurement (React Profiler, Flamegraph)  
-- [ ] Performance budgeting and monitoring  
+- [ ] Performance profiling tools (Profiler, Flamegraph)  
+- [ ] Performance budgeting  
 
 ### 4.2 Loading Optimization
 
-- [ ] Code Splitting  
-- [ ] Lazy Loading Components  
+- [ ] Code Splitting & Lazy Loading  
 - [ ] Dynamic Imports  
 - [ ] Tree Shaking  
 - [ ] Image Optimization (Next.js Image, CDN)  
+- [ ] Critical CSS and font loading  
 
 ### 4.3 Network Optimization
 
-- [ ] Caching strategies (HTTP, Service Workers)  
-- [ ] CDN design  
+- [ ] HTTP caching strategies  
+- [ ] CDN design & cache invalidation  
 - [ ] Compression (Gzip, Brotli)  
-- [ ] Prefetch, Preconnect, DNS-prefetch  
+- [ ] Prefetch / Preconnect / DNS-prefetch  
+- [ ] Service Workers and offline-first design  
 
 ### 4.4 Core Web Vitals
 
 - [ ] LCP (Largest Contentful Paint)  
 - [ ] FID (First Input Delay)  
 - [ ] CLS (Cumulative Layout Shift)  
-- [ ] Tools: Lighthouse, WebPageTest  
+- [ ] TTFB, INP (Interaction to Next Paint)  
+- [ ] Tools: Lighthouse, WebPageTest, Calibre  
 
 ---
 
@@ -128,25 +132,26 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 ### 5.1 Large-Scale Frontend Systems
 
 - [ ] Micro-frontend architecture  
-- [ ] Module Federation (Webpack, Vite Federation)  
-- [ ] Communication between micro frontends  
+- [ ] Module Federation (Webpack / Vite)  
+- [ ] Cross-microfrontend communication  
 - [ ] Shared dependency management  
-- [ ] Independent deployments  
 - [ ] Edge-side rendering (ESR) vs SSR vs CSR  
-- [ ] Static generation strategies  
+- [ ] Incremental static regeneration (ISR)  
+- [ ] Independent deployments  
 
 ### 5.2 API Design & Integration
 
 - [ ] REST vs GraphQL vs gRPC  
-- [ ] Pagination, filtering, caching  
-- [ ] API versioning  
-- [ ] Error handling patterns  
+- [ ] Pagination, filtering, and caching  
+- [ ] API versioning strategies  
+- [ ] Error handling & retry mechanisms  
+- [ ] Circuit breakers & graceful fallbacks  
 
 ### 5.3 Event-driven Frontends
 
 - [ ] WebSockets  
-- [ ] SSE (Server-Sent Events)  
-- [ ] Pub/Sub using Kafka or Redis Streams (frontend perspective)
+- [ ] Server-Sent Events (SSE)  
+- [ ] Pub/Sub using Kafka, Redis, or WebSocket brokers  
 
 ---
 
@@ -154,22 +159,23 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ### 6.1 Build Systems
 
-- [ ] Webpack, Vite, Turbopack comparison  
-- [ ] Bundling & Minification  
-- [ ] Source Maps  
+- [ ] Webpack / Vite / Turbopack comparison  
+- [ ] Bundling, Minification & Tree-shaking  
+- [ ] Source Maps & Bundle Analysis  
 
 ### 6.2 Continuous Integration
 
-- [ ] Testing pipeline (Jest, Playwright, Cypress)  
 - [ ] Linting & Formatting (ESLint, Prettier)  
 - [ ] Code Quality Gates (SonarQube, CodeCov)  
+- [ ] Automated Tests (Jest, Playwright, Cypress)  
+- [ ] CI pipelines (GitHub Actions, GitLab CI, Jenkins)  
 
-### 6.3 Deployment
+### 6.3 Deployment Strategies
 
-- [ ] Next.js on Vercel  
+- [ ] Next.js on Vercel / Netlify  
 - [ ] React on AWS S3 + CloudFront  
-- [ ] Containerization (Docker)  
-- [ ] CI/CD (GitHub Actions, Jenkins, GitLab CI)  
+- [ ] Docker + Nginx deployment  
+- [ ] Canary & Blue-Green Deployments  
 
 ---
 
@@ -177,86 +183,110 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ### 7.1 Testing Levels
 
-- [ ] Unit Testing (Component logic & hooks)  
-- [ ] Integration Testing (Component + API interaction)  
-- [ ] E2E Testing (Full flow validation with tools like Cypress/Playwright)  
-- [ ] Visual Regression Testing (Percy, Chromatic)  
+- [ ] Unit, Integration, and E2E Testing  
+- [ ] Visual Regression (Chromatic, Percy)  
 - [ ] Accessibility Testing (axe-core, Lighthouse, Wave)
 
-### 7.2 Testing Tools & Frameworks
+### 7.2 Tools & Frameworks
 
-- [ ] Jest (Unit + Snapshot testing)  
-- [ ] React Testing Library (RTL)  
+- [ ] Jest + React Testing Library (RTL)  
 - [ ] Cypress / Playwright (E2E)  
-- [ ] MSW (Mock Service Worker for API mocking)  
+- [ ] MSW (Mock Service Worker)  
 - [ ] Storybook test runner  
 
 ### 7.3 Testing Architecture
 
-- [ ] Test folder structure and naming conventions  
-- [ ] Mocking APIs and modules efficiently  
-- [ ] Setting up CI test pipelines  
-- [ ] Test coverage thresholds and reporting  
+- [ ] Test folder structure & naming  
+- [ ] API mocking & utilities  
+- [ ] CI test pipelines  
+- [ ] Coverage & thresholds  
+
+---
 
 ## 🔒 8. Security in Frontend Design
 
 - [ ] XSS (Cross-Site Scripting)  
 - [ ] CSRF (Cross-Site Request Forgery)  
 - [ ] Clickjacking  
-- [ ] Content Security Policy  
+- [ ] Content Security Policy (CSP)  
 - [ ] Authentication & Authorization (JWT, OAuth2)  
 - [ ] Secure localStorage/sessionStorage handling  
+- [ ] HTTPS enforcement & SameSite cookies  
 
 ---
 
-## 🧠 9. Design System & UI Consistency
+## 🎨 9. Design System & UI Consistency
 
 - [ ] Design Tokens  
-- [ ] Component Libraries (Chakra, MUI, shadcn/ui)  
+- [ ] Component Libraries (MUI, Chakra, shadcn/ui)  
 - [ ] Figma-to-Code workflows  
 - [ ] Storybook for UI documentation  
-- [ ] Theming & Dark Mode Architecture  
+- [ ] Theming & Dark Mode architecture  
+- [ ] Accessibility & responsive design standards  
 
 ---
 
 ## 🌐 10. Scalability & Maintainability
 
 - [ ] Versioning components  
-- [ ] Reusable hooks & utils libraries  
-- [ ] Typed contracts with TypeScript  
+- [ ] Reusable hooks & utility libraries  
+- [ ] Typed contracts (TypeScript everywhere)  
 - [ ] Error boundaries & fallback UIs  
-- [ ] Observability (Logs, Metrics, Tracing)  
-- [ ] Monitoring (Sentry, Datadog)  
-- [ ] Modular Federation versioning  
-- [ ] Internal npm package publishing & management  
-- [ ] Team collaboration strategies for large codebases  
+- [ ] Internal npm package publishing  
+- [ ] Cross-team collaboration & code ownership  
+- [ ] Documentation automation (Storybook, Docsify)  
 
 ---
 
-## 🧮 11. Case Studies & Mock Design Interviews
+## 📊 11. Logging & Monitoring
+
+### 11.1 Client-side Logging
+
+- [ ] Structured logging with levels (info, warn, error)  
+- [ ] Centralized log collection (Elastic, Datadog, Sumo Logic)  
+- [ ] Redaction of sensitive data before logging  
+- [ ] Contextual logging (user session, device info)  
+
+### 11.2 Monitoring & Observability
+
+- [ ] Frontend Observability concepts  
+- [ ] Metrics: Error rates, response times, API latency  
+- [ ] Tools: Sentry, Datadog, New Relic, OpenTelemetry  
+- [ ] Real User Monitoring (RUM) setup  
+- [ ] Dashboards and alerting strategies  
+
+### 11.3 Error Handling Architecture
+
+- [ ] Global error boundaries  
+- [ ] Retry, fallback, and recovery strategies  
+- [ ] Logging user flows before errors (breadcrumbs)  
+
+---
+
+## 🧮 12. Case Studies & Mock Design Interviews
 
 - [ ] Design Netflix Frontend  
 - [ ] Design YouTube Frontend  
 - [ ] Design Airbnb Frontend  
 - [ ] Design Twitter Feed System  
-- [ ] Design a Live Dashboard (with WebSockets)  
-- [ ] Frontend Design Interview Framework (clarify → define → draw → evaluate)
+- [ ] Design Live Dashboard (WebSockets)  
+- [ ] Interview Framework: Clarify → Define → Draw → Evaluate  
 
 ---
 
-## 📚 12. Reference Materials
+## 📚 13. Reference Materials
 
 ### Books
 
-- [ ] *System Design Interview* by Alex Xu (frontend chapters)  
-- [ ] *Designing Data-Intensive Applications* (frontend impact understanding)  
+- [ ] *System Design Interview* by Alex Xu  
+- [ ] *Designing Data-Intensive Applications*  
 - [ ] *The Pragmatic Programmer*  
 
 ### Courses / Talks
 
 - [ ] FrontendMasters: “Frontend Architecture Patterns”  
 - [ ] ReactConf / Next.jsConf Talks  
-- [ ] YouTube: Jack Herrington, ThePrimeagen (architecture deep dives)  
+- [ ] YouTube: Jack Herrington, ThePrimeagen  
 
 ---
 
@@ -274,6 +304,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 | Security | ☐ |  |
 | Design System | ☐ |  |
 | Scalability | ☐ |  |
+| Logging & Monitoring | ☐ |  |
 | Case Studies | ☐ |  |
 
 ---
@@ -282,7 +313,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 By completing all topics, you’ll be able to:
 
-- Architect scalable frontends end-to-end  
-- Evaluate trade-offs in design decisions  
-- Communicate clearly in system design interviews  
-- Build production-grade systems like Netflix, YouTube, or Airbnb
+- Design and scale enterprise-grade frontends  
+- Evaluate trade-offs in architecture decisions  
+- Communicate effectively in frontend system design interviews  
+- Build production-level systems like Netflix, YouTube, or Airbnb  

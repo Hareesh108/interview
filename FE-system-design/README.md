@@ -37,6 +37,9 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] Hooks-based patterns  
 - [ ] Compound Components  
 - [ ] Controlled vs Uncontrolled Components  
+- [ ] Frontend clean architecture principles  
+- [ ] Separation of concerns (UI, business logic, data fetching)  
+- [ ] Feature flags and A/B testing strategies  
 
 ### 2.2 Design Patterns in Frontend
 
@@ -93,6 +96,8 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] React Compiler & automatic memoization  
 - [ ] Windowing (react-window, react-virtualized)  
 - [ ] Avoiding unnecessary renders  
+- [ ] Rendering metrics measurement (React Profiler, Flamegraph)  
+- [ ] Performance budgeting and monitoring  
 
 ### 4.2 Loading Optimization
 
@@ -127,6 +132,8 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] Communication between micro frontends  
 - [ ] Shared dependency management  
 - [ ] Independent deployments  
+- [ ] Edge-side rendering (ESR) vs SSR vs CSR  
+- [ ] Static generation strategies  
 
 ### 5.2 API Design & Integration
 
@@ -166,7 +173,32 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ---
 
-## 🔒 7. Security in Frontend Design
+## 🧪 7. Testing Strategy
+
+### 7.1 Testing Levels
+
+- [ ] Unit Testing (Component logic & hooks)  
+- [ ] Integration Testing (Component + API interaction)  
+- [ ] E2E Testing (Full flow validation with tools like Cypress/Playwright)  
+- [ ] Visual Regression Testing (Percy, Chromatic)  
+- [ ] Accessibility Testing (axe-core, Lighthouse, Wave)
+
+### 7.2 Testing Tools & Frameworks
+
+- [ ] Jest (Unit + Snapshot testing)  
+- [ ] React Testing Library (RTL)  
+- [ ] Cypress / Playwright (E2E)  
+- [ ] MSW (Mock Service Worker for API mocking)  
+- [ ] Storybook test runner  
+
+### 7.3 Testing Architecture
+
+- [ ] Test folder structure and naming conventions  
+- [ ] Mocking APIs and modules efficiently  
+- [ ] Setting up CI test pipelines  
+- [ ] Test coverage thresholds and reporting  
+
+## 🔒 8. Security in Frontend Design
 
 - [ ] XSS (Cross-Site Scripting)  
 - [ ] CSRF (Cross-Site Request Forgery)  
@@ -177,7 +209,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ---
 
-## 🧠 8. Design System & UI Consistency
+## 🧠 9. Design System & UI Consistency
 
 - [ ] Design Tokens  
 - [ ] Component Libraries (Chakra, MUI, shadcn/ui)  
@@ -187,7 +219,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ---
 
-## 🌐 9. Scalability & Maintainability
+## 🌐 10. Scalability & Maintainability
 
 - [ ] Versioning components  
 - [ ] Reusable hooks & utils libraries  
@@ -195,10 +227,13 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 - [ ] Error boundaries & fallback UIs  
 - [ ] Observability (Logs, Metrics, Tracing)  
 - [ ] Monitoring (Sentry, Datadog)  
+- [ ] Modular Federation versioning  
+- [ ] Internal npm package publishing & management  
+- [ ] Team collaboration strategies for large codebases  
 
 ---
 
-## 🧮 10. Case Studies & Mock Design Interviews
+## 🧮 11. Case Studies & Mock Design Interviews
 
 - [ ] Design Netflix Frontend  
 - [ ] Design YouTube Frontend  
@@ -209,7 +244,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ---
 
-## 📚 11. Reference Materials
+## 📚 12. Reference Materials
 
 ### Books
 
@@ -235,6 +270,7 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 | Performance | ☐ |  |
 | System Design | ☐ |  |
 | Build & Deploy | ☐ |  |
+| Testing Strategy | ☐ |  |
 | Security | ☐ |  |
 | Design System | ☐ |  |
 | Scalability | ☐ |  |

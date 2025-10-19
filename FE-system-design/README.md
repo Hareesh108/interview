@@ -11,10 +11,10 @@ Understand **architecture patterns**, **performance optimization**, **state mana
 
 ### 1.1 What is Frontend System Design?
 
-- ☑ Definition & Purpose  
-- ☐ Difference between UI Design and System Design  
-- [ ] How it connects with Backend & DevOps  
-- [ ] Example: Designing YouTube frontend architecture
+- ✅ Definition & Purpose  
+- ✅ Difference between UI Design and System Design  
+- ✅ How it connects with Backend & DevOps  
+- ✅ Example: Designing YouTube frontend architecture
 
 ### 1.2 Core Principles
 

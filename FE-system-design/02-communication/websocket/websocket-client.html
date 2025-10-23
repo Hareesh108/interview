@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebSocket Chat (Socket.IO)</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .log { border: 1px solid #ccc; padding: 10px; height: 250px; overflow-y: auto; margin-top: 20px; }
+    .chat-box { margin-top: 15px; display: flex; gap: 10px; }
+    input[type="text"] { flex: 1; padding: 8px; font-size: 16px; }
+    button { padding: 8px 12px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>💬 WebSocket Chat Example (Two-Way Communication)</h1>
+  <p>Send messages below — all connected clients will receive them instantly.</p>
+
+  <div class="log" id="log"></div>
+
+  <div class="chat-box">
+    <input id="msgInput" type="text" placeholder="Type your message..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <!-- Socket.IO client -->
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script>
+    const log = document.getElementById("log");
+    const msgInput = document.getElementById("msgInput");
+    const sendBtn = document.getElementById("sendBtn");
+
+    const socket = io("http://localhost:5000");
+
+    // Show connection messages
+    socket.on("connect", () => {
+      logMessage(`✅ Connected as ${socket.id}`);
+    });
+    socket.on("disconnect", () => {
+      logMessage(`❌ Disconnected`);
+    });
+
+    // Receive message from server
+    socket.on("message", (data) => {
+      logMessage(`[${new Date().toLocaleTimeString()}] ${data.text}`);
+    });
+
+    // Send message to server
+    sendBtn.addEventListener("click", sendMessage);
+    msgInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") sendMessage();
+    });
+
+    function sendMessage() {
+      const text = msgInput.value.trim();
+      if (!text) return;
+      socket.emit("chatMessage", { text });
+      msgInput.value = "";
+    }
+
+    function logMessage(message) {
+      log.innerHTML += message + "<br>";
+      log.scrollTop = log.scrollHeight;
+    }
+  </script>
+</body>
+</html>

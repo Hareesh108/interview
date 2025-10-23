@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Long Polling Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .log { border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: auto; margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>Long Polling Example</h1>
+  <p>Client sends a request and waits until server has new data. Reduces unnecessary requests.</p>
+  <div class="log" id="longLog"></div>
+
+<script>
+  const longLog = document.getElementById('longLog');
+
+  function longPolling() {
+    fetch('http://localhost:5000/long-polling')
+      .then(res => res.json())
+      .then(data => {
+        const msg = `[${new Date().toLocaleTimeString()}] Long Polling: ${data.message}`;
+        longLog.innerHTML += msg + '<br>';
+        longLog.scrollTop = longLog.scrollHeight;
+
+        // Start next long poll immediately after response
+        longPolling();
+      })
+      .catch(err => {
+        console.error(err);
+        setTimeout(longPolling, 2000);
+      });
+  }
+
+  longPolling();
+</script>
+
+
+</body>
+</html>

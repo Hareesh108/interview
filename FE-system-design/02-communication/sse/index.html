@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server-Sent Events Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .log { border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: auto; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Server-Sent Events Example</h1>
+  <p>The server pushes messages to the client every few seconds.</p>
+  <div class="log" id="log"></div>
+
+  <script>
+    const log = document.getElementById("log");
+
+    // Create an EventSource connection
+    const eventSource = new EventSource("http://localhost:5000/sse");
+
+    // Listen for incoming messages
+    eventSource.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      const msg = `[${new Date().toLocaleTimeString()}] ${data.message}`;
+      log.innerHTML += msg + "<br>";
+      log.scrollTop = log.scrollHeight;
+    };
+
+    // Handle errors
+    eventSource.onerror = (err) => {
+      console.error("SSE Error:", err);
+    };
+  </script>
+</body>
+</html>

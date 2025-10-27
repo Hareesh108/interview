@@ -1,4 +1,4 @@
-## 🧩 Frontend Security Vulnerabilities & Mitigations
+# 🧩 Frontend Security Vulnerabilities & Mitigations
 
 This project demonstrates **common frontend vulnerabilities** and their **mitigations** using simple HTML examples. It also includes real-world use cases and explains how **Next.js** helps prevent these issues.
 

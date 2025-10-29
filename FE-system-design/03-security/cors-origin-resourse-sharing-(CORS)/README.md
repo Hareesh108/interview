@@ -72,3 +72,82 @@ to JS (success)                 → JS sees "TypeError: Failed to fetch"
 
 ---
 
+
+---
+
+# 🧭 **CORS Flow — Frontend | Browser | Server**
+
+```
+┌────────────────────────┬────────────────────────────┬────────────────────────────┐
+│  FRONTEND (Your Code)  │  BROWSER ENGINE (CORS Logic) │  SERVER / API             │
+├────────────────────────┼────────────────────────────┼────────────────────────────┤
+│                        │                            │                            │
+│ JS calls:              │                            │                            │
+│ fetch("https://api.example.com")                    │                            │
+│                        │                            │                            │
+│                        │ Detect cross-origin        │                            │
+│                        │ (Compare page origin vs    │                            │
+│                        │ target origin)             │                            │
+│                        │                            │                            │
+│                        │───────────────────────────►│                            │
+│                        │ Check if “Simple request”? │                            │
+│                        │                            │                            │
+│                        │ ┌──────────────┬──────────────┐                          │
+│                        │ │ Simple ✅    │ Non-simple ❌ │                          │
+│                        │ └──────────────┴──────────────┘                          │
+│                        │        │                   │                            │
+│                        │        │                   ▼                            │
+│                        │        │          Send OPTIONS (Preflight)              │
+│                        │        │───────────────────────────────────────────────►│
+│                        │        │                   │                            │
+│                        │        │                   │ Server responds:           │
+│                        │        │                   │ Access-Control-Allow-*     │
+│                        │        │                   │ headers + status 200/204   │
+│                        │        │◄───────────────────────────────────────────────│
+│                        │        │                   │                            │
+│                        │        │ Validate preflight headers                     │
+│                        │        │ - Origin match?                                │
+│                        │        │ - Method allowed?                              │
+│                        │        │ - Headers allowed?                             │
+│                        │        │ - Credentials OK?                              │
+│                        │        │                                                │
+│                        │        │───► If valid → proceed                         │
+│                        │        │───► If invalid → block, raise CORS error        │
+│                        │        ▼                                                │
+│                        │ Send actual request (with Origin header)                │
+│                        │────────────────────────────────────────────────────────►│
+│                        │                   │ Server processes normally           │
+│                        │                   │ Adds CORS headers in response       │
+│                        │◄────────────────────────────────────────────────────────│
+│                        │ Validate response headers again                         │
+│                        │ - Access-Control-Allow-Origin matches?                  │
+│                        │ - Credentials rules OK?                                 │
+│                        │                                                        │
+│                        │───► If valid: expose to JS                              │
+│                        │───► If invalid: block (TypeError: Failed to fetch)      │
+│                        ▼                                                        │
+│ JS receives: ✅ Response or ❌ CORS error                                         │
+│                        │                                                        │
+└────────────────────────┴────────────────────────────┴────────────────────────────┘
+```
+
+---
+
+# 🧩 **Responsibility summary**
+
+| Layer              | Responsibility                                                                                 | Cannot control                                      |
+| ------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| **Frontend (JS)**  | Triggers request, decides mode (`cors`, `same-origin`, `no-cors`), adds `credentials` flag     | Cannot modify browser’s CORS checks                 |
+| **Browser Engine** | Enforces same-origin policy, decides if preflight needed, validates headers, blocks or exposes | Controlled entirely by browser internals            |
+| **Server / API**   | Responds to OPTIONS + actual requests with correct CORS headers                                | Cannot override browser decision if headers invalid |
+
+---
+
+# ⚙️ **Core rule to remember**
+
+> The browser is the CORS gatekeeper —
+> your backend only *declares permissions* using headers,
+> your frontend can only *request politely*,
+> but only the browser decides whether to deliver the response.
+
+---

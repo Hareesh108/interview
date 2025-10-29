@@ -75,7 +75,7 @@ to JS (success)                 → JS sees "TypeError: Failed to fetch"
 
 ---
 
-# 🧭 **CORS Flow — Frontend | Browser | Server**
+## 🧭 **CORS Flow — Frontend | Browser | Server**
 
 ```
 ┌────────────────────────┬────────────────────────────┬────────────────────────────┐
@@ -90,10 +90,10 @@ to JS (success)                 → JS sees "TypeError: Failed to fetch"
 │                        │ target origin)             │                            │
 │                        │                            │                            │
 │                        │───────────────────────────►│                            │
-│                        │ Check if “Simple request”? │                            │
+│                        │ Check if “Request”? │                            │
 │                        │                            │                            │
 │                        │ ┌──────────────┬──────────────┐                          │
-│                        │ │ Simple ✅    │ Non-simple ❌ │                          │
+│                        │ │ Same Origin ✅    │ Cross Origin ❌ │                          │
 │                        │ └──────────────┴──────────────┘                          │
 │                        │        │                   │                            │
 │                        │        │                   ▼                            │
@@ -133,7 +133,7 @@ to JS (success)                 → JS sees "TypeError: Failed to fetch"
 
 ---
 
-# 🧩 **Responsibility summary**
+## 🧩 Responsibility summary
 
 | Layer              | Responsibility                                                                                 | Cannot control                                      |
 | ------------------ | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- |
@@ -143,7 +143,7 @@ to JS (success)                 → JS sees "TypeError: Failed to fetch"
 
 ---
 
-# ⚙️ **Core rule to remember**
+## ⚙️ Core rule to remember
 
 > The browser is the CORS gatekeeper —
 > your backend only *declares permissions* using headers,

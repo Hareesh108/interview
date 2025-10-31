@@ -10,7 +10,7 @@
 
 Testing small, individual pieces of code — like a single function or UI component — to ensure it works correctly in isolation.
 
-### 🛒 Example (Amazon)
+### 🛒 Example (Amazon) -
 
 Amazon’s “Add to Cart” button runs a small JavaScript function that adds a product to the shopping cart. A unit test would check if clicking this button increases the cart count by one.
 

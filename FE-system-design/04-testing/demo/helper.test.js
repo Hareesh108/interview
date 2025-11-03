@@ -17,3 +17,12 @@ test("check first person age", () => {
 
   expect(sorted[0]).toEqual(30);
 });
+
+test("check the last person is Jane",()=>{
+  const {sortMe} = require("./helper")
+
+  const sorted = sortMe()
+
+  expect(sorted[sorted.length - 1].name).toEqual("Jane")
+
+})

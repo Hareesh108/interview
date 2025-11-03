@@ -9,10 +9,9 @@ test("sortMe function", () => {
     { name: "Rahul", age: 28 },
     { name: "Jane", age: 30 },
   ]);
-
 });
 
-test("sortMe function", () => {
+test("check first person age", () => {
   const { sortMe } = require("./helper");
   const sorted = sortMe();
 

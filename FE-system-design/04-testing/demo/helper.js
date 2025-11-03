@@ -10,6 +10,7 @@ const sortMe = () => {
   return TEST.sort((a, b) => a.age - b.age);
 };
 
+
 console.log(sortMe());
 
 module.exports = { sortMe };

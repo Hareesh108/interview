@@ -1,8 +1,24 @@
+import * as z from "zod";
 import "./App.css";
 import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const FormSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  age: z.number().min(1, "Age is required"),
+});
 
 function App() {
-  const { handleSubmit, register, watch } = useForm();
+  const {
+    handleSubmit,
+    register,
+    watch,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(FormSchema),
+  });
+
+  console.log("errors:", errors);
 
   const values = watch();
   console.log("values:", values);
@@ -20,14 +36,14 @@ function App() {
           </label>
           <input type="text" id="name" {...register("name")} />
         </div>
+
         <div style={{ display: "flex", gap: 10 }}>
           <label htmlFor="age" style={{ width: 80 }}>
             Age
           </label>
           <input
-            type="number"
             id="age"
-            {...register("age", { required: true })}
+            {...register("age")}
           />
         </div>
         <button type="submit">Submit</button>

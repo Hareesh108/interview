@@ -16,3 +16,16 @@
 - npm i jest
 - npm i @types/jest -D
 - npx ts-jest config:init
+
+## Configuration of tailwind css
+
+- npm install tailwindcss @tailwindcss/vite
+- import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+- @import "tailwindcss"
+

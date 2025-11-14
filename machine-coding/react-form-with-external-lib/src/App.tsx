@@ -1,5 +1,4 @@
 import * as z from "zod";
-import "./App.css";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 
@@ -29,17 +28,35 @@ function App() {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)}>
-      <div style={{ display: "flex", flexDirection: "column", gap: 15 }}>
-        <div style={{ display: "flex", gap: 10 }}>
-          <label htmlFor="name" style={{ width: 80 }}>
+    <form
+      onSubmit={handleSubmit(handleFormSubmit)}
+      className="flex items-center justify-center min-h-screen bg-gray-50"
+    >
+      <div className="flex flex-col gap-6 w-80 bg-white shadow-xl p-8 rounded-2xl border border-gray-200">
+        <h2 className="text-xl font-semibold text-gray-800 text-center">
+          User Details
+        </h2>
+
+        <div className="flex flex-col">
+          <label
+            htmlFor="name"
+            className="text-sm font-medium text-gray-700 mb-1"
+          >
             Name
           </label>
-          <input type="text" id="name" {...register("name")} />
+          <input
+            type="text"
+            id="name"
+            {...register("name")}
+            className="border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+          />
         </div>
 
-        <div style={{ display: "flex", gap: 10 }}>
-          <label htmlFor="age" style={{ width: 80 }}>
+        <div className="flex flex-col">
+          <label
+            htmlFor="age"
+            className="text-sm font-medium text-gray-700 mb-1"
+          >
             Age
           </label>
           <input
@@ -47,10 +64,16 @@ function App() {
             type="number"
             {...register("age")}
             onWheel={(e) => e.currentTarget.blur()}
+            className="border rounded-lg p-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
           />
         </div>
 
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition-all"
+        >
+          Submit
+        </button>
       </div>
     </form>
   );

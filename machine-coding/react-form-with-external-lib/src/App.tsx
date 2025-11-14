@@ -7,11 +7,13 @@ const FormSchema = z.object({
   age: z.coerce.number().min(1, "Age is required."),
 });
 
+type FormValues = z.infer<typeof FormSchema>
+
 function App() {
   const {
     handleSubmit,
     register,
-    watch,
+    getValues,
     formState: { errors },
   } = useForm({
     resolver: zodResolver(FormSchema),
@@ -19,11 +21,10 @@ function App() {
 
   console.log("errors:", errors);
 
-  const values = watch();
+  const values = getValues();
   console.log("values:", values);
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleFormSubmit = (data: any) => {
+  const handleFormSubmit = (data: FormValues) => {
     console.log("data:", data);
   };
 

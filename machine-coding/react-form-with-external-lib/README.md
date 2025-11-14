@@ -16,6 +16,10 @@
 - npm i jest
 - npm i @types/jest -D
 - npx ts-jest config:init
+- npm install --save-dev @testing-library/react @testing-library/dom @types/react @types/react-dom
+
+
+
 
 ## Configuration of tailwind css
 

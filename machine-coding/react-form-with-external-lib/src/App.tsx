@@ -23,6 +23,7 @@ function App() {
   const values = watch();
   console.log("values:", values);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleFormSubmit = (data: any) => {
     console.log("data:", data);
   };

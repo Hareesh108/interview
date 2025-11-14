@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 const FormSchema = z.object({
   name: z.string().min(1, "Name is required"),
-  age: z.number().min(1, "Age is required"),
+  age: z.coerce.number().min(1, "Age is required."),
 });
 
 function App() {
@@ -43,9 +43,12 @@ function App() {
           </label>
           <input
             id="age"
+            type="number"
             {...register("age")}
+            onWheel={(e) => e.currentTarget.blur()}
           />
         </div>
+
         <button type="submit">Submit</button>
       </div>
     </form>

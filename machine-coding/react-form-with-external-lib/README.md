@@ -17,9 +17,7 @@
 - npm i @types/jest -D
 - npx ts-jest config:init
 - npm install --save-dev @testing-library/react @testing-library/dom @types/react @types/react-dom
-
-
-
+npm install --save-dev @testing-library/user-event
 
 ## Configuration of tailwind css
 

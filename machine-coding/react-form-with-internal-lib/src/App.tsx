@@ -14,6 +14,7 @@ function App() {
   async function handleForm(formData: FormData) {
     const data = getFormValues<FormValues>(formData);
     console.log("Typed:", data);
+    console.log("Typed:", data);
   }
 
   return (

@@ -46,12 +46,12 @@ Some rules inside reconciliation:
 
 **Answer (bullet points):**
 
-* **Incremental Rendering / Time-Slicing:** Fiber can split work into chunks and spread rendering over multiple frames instead of doing it all at once, preventing long blocking operations. ([GitHub][4])
-* **Prioritization of Updates:** Fiber lets React assign priorities to different updates (e.g. user input vs background data fetching), so that urgent tasks get rendered first. ([Medium][2])
-* **Interruptible Rendering / Pause, Resume, Abort:** Rendering can be paused (e.g. if a higher-priority update comes in), then resumed or even discarded if no longer needed — improving responsiveness and avoiding wasted work. ([Code With Seb Blog][5])
-* **Support for New Features (Concurrent Rendering, Suspense, Lazy Loading, etc.):** Fiber is foundational for modern React features like concurrent rendering (in React 18+), Suspense for data fetching / code splitting, lazy loading components, etc. ([blog.openreplay.com][6])
-* **Better Handling of Large & Complex Component Trees:** With incremental work, scheduling, and prioritization, even deeply nested or large component trees can update smoothly without blocking UI. ([Medium][7])
-* **Improved Resilience (e.g. Error Boundaries):** Fiber simplifies error boundary behavior — making it easier to catch and handle errors gracefully without bringing down the entire app. ([NamasteDev][8])
+* **Incremental Rendering / Time-Slicing:** Fiber can split work into chunks and spread rendering over multiple frames instead of doing it all at once, preventing long blocking operations. ([GitHub](https://github.com/acdlite/react-fiber-architecture?utm_source=chatgpt.com))
+* **Prioritization of Updates:** Fiber lets React assign priorities to different updates (e.g. user input vs background data fetching), so that urgent tasks get rendered first. ([Medium](https://medium.com/%40sattarrasouli/the-evolution-of-react-reconciliation-from-stack-to-fiber-to-the-react-compiler-9a63d08b3ad3))
+* **Interruptible Rendering / Pause, Resume, Abort:** Rendering can be paused (e.g. if a higher-priority update comes in), then resumed or even discarded if no longer needed — improving responsiveness and avoiding wasted work. ([Code With Seb Blog](https://www.codewithseb.com/blog/deep-dive-into-react-fiber-the-engine-behind-modern-react?utm_source=chatgpt.com))
+* **Support for New Features (Concurrent Rendering, Suspense, Lazy Loading, etc.):** Fiber is foundational for modern React features like concurrent rendering (in React 18+), Suspense for data fetching / code splitting, lazy loading components, etc. ([blog.openreplay.com](https://blog.openreplay.com/understanding-react-fiber-improves-rendering-performance/?utm_source=chatgpt.com))
+* **Better Handling of Large & Complex Component Trees:** With incremental work, scheduling, and prioritization, even deeply nested or large component trees can update smoothly without blocking UI. ([Medium](https://medium.com/%40pranshu6sept/react-fiber-the-concurrent-rendering-revolution-that-changed-everything-7f17a69da5b8))
+* **Improved Resilience (e.g. Error Boundaries):** Fiber simplifies error boundary behavior — making it easier to catch and handle errors gracefully without bringing down the entire app. ([NamasteDev](https://namastedev.com/blog/understanding-the-react-fiber-architecture-2/?utm_source=chatgpt.com))
 
 ---
 

@@ -130,6 +130,9 @@ Here, **React sits entirely inside the View box**.
 - RSC (React Server Component)
 ![SSR](./images/rsc.png)
 
+- All in One
+![SSR](./images/combine.png)
+
 ### Ref Links
 
 - <https://www.softsuave.com/blog/why-is-react-only-the-view-layer-in-mvc/>

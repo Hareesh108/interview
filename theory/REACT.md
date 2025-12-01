@@ -41,6 +41,8 @@ Some rules inside reconciliation:
 
 ---
 
+![Image](./images/stack-fiber-diff.png)
+
 ## **1️⃣ Fiber Node Structure Diagram**
 
 ```

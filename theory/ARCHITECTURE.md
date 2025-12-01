@@ -44,6 +44,7 @@
 ![View Layer](./images/view-layer.png)
 ![Model and Control Layer](./images/model-control-layer.png)
 
+
 ### 3.1 High-level MVC with React
 
 ```text
@@ -96,7 +97,17 @@ Here, **React sits entirely inside the View box**.
                                     Browser DOM
 ```
 
-> **“React is a UI library that mainly implements the *View* in MVC. It renders the interface using components and declarative UI, while the Model and Controller responsibilities are handled by external tools like Redux, Context, services, and routers. This keeps React focused, flexible, and easy to integrate into any architecture.”**
+- React is a UI library that mainly implements the *View* in MVC. It renders the interface using components and declarative UI, while the Model and Controller responsibilities are handled by external tools like Redux, Context, services, and routers. This keeps React focused, flexible, and easy to integrate into any architecture.
+
+### BFF Layer (Backend-For-Frontend)
+
+- A BFF sits between each frontend (web/mobile) and backend microservices to simplify UI development by handling authentication, aggregation, and formatting of data, so the frontend gets only what it needs in one optimized response.
+
+- SPA wants to show user + payment history
+→ SPA → BFF → Users + Payments microservices → BFF aggregates → SPA receives final combined data.
+
+
+![BFF Layer](./images/bff-backend-for-frontend.png)
 
 ### Ref Links
 

@@ -41,6 +41,9 @@
 
 ## 3. Block Diagram – React as View in MVC
 
+![View Layer](./images/view-layer.png)
+![Model and Control Layer](./images/model-control-layer.png)
+
 ### 3.1 High-level MVC with React
 
 ```text

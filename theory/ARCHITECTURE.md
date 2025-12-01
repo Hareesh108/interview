@@ -1,5 +1,5 @@
 
-# React as the View Layer in MVC 
+# React as the View Layer in MVC
 
 **React is primarily the *View* layer in MVC.**  
 
@@ -97,3 +97,7 @@ Here, **React sits entirely inside the View box**.
 ```
 
 > **“React is a UI library that mainly implements the *View* in MVC. It renders the interface using components and declarative UI, while the Model and Controller responsibilities are handled by external tools like Redux, Context, services, and routers. This keeps React focused, flexible, and easy to integrate into any architecture.”**
+
+### Ref Links
+
+- <https://www.softsuave.com/blog/why-is-react-only-the-view-layer-in-mvc/>

@@ -30,6 +30,7 @@ Some rules inside reconciliation:
 - For lists/arrays of children, reconciliation relies on **keys** to match items and minimize reordering or unnecessary re-renders. ([legacy.reactjs.org][1])
 
 ---
+![Image](./images/reconciliation.png)
 
 ### **Q3. Why (and how) did React move from the old “Stack Reconciler” to Fiber? What is React Fiber?**
 

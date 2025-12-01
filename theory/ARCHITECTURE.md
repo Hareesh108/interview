@@ -44,7 +44,6 @@
 ![View Layer](./images/view-layer.png)
 ![Model and Control Layer](./images/model-control-layer.png)
 
-
 ### 3.1 High-level MVC with React
 
 ```text
@@ -105,7 +104,6 @@ Here, **React sits entirely inside the View box**.
 
 - SPA wants to show user + payment history
 → SPA → BFF → Users + Payments microservices → BFF aggregates → SPA receives final combined data.
-
 
 ![BFF Layer](./images/bff-backend-for-frontend.png)
 

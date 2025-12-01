@@ -107,6 +107,29 @@ Here, **React sits entirely inside the View box**.
 
 ![BFF Layer](./images/bff-backend-for-frontend.png)
 
+### React SPA (Single Page Application)
+
+-A React SPA (Single Page Application) sends one blank HTML file and then loads a big JavaScript bundle before the page becomes interactive.
+
+- In SPA, TTI (Time to Interactive (TTI)) is slow because of heavy JavaScript.
+
+### Solution for SPA -> SSG / ISR / SSR
+
+- SSG (Static Site Generation)
+![SSG](./images/ssg.png)
+
+- ISR (Incremental Static Regeneration)
+![ISR](./images/isr.png)
+
+- SSR (Server-Side Rendering)
+![SSR](./images/ssr.png)
+
+- Hydration
+![SSR](./images/hydration.png)
+
+- RSC (React Server Component)
+![SSR](./images/rsc.png)
+
 ### Ref Links
 
 - <https://www.softsuave.com/blog/why-is-react-only-the-view-layer-in-mvc/>

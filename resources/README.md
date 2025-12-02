@@ -1,6 +1,6 @@
 # Resources
 
-### GitHub repos that made me a better frontend developer
+## GitHub repos that made me a better frontend developer
 
 - 𝟏. 𝐑𝐞𝐚𝐜𝐭 𝐏𝐚𝐭𝐭𝐞𝐫𝐧𝐬 <https://lnkd.in/eG54gu2b> ↳ Real-world patterns used in production apps ↳ Helped me structure enterprise codebases better
 - 𝟐. 𝐓𝐡𝐢𝐫𝐭𝐲 𝐒𝐞𝐜𝐨𝐧𝐝𝐬 𝐨𝐟 𝐂𝐨𝐝𝐞 github.com/30-seconds ↳ Code snippets you'll use daily ↳ Saved me countless hours of Googling

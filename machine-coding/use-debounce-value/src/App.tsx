@@ -1,31 +1,37 @@
+import { useState, useEffect } from "react";
 import "./App.css";
-
-
-function getFormValues<T extends object>(formData: FormData): T {
-  return Object.fromEntries(formData.entries()) as T;
-}
-
-type FormValues = {
-  name: string;
-  age: string; 
-};
-
-async function handleForm(formData: FormData) {
-  const data = getFormValues<FormValues>(formData);
-  console.log("Typed:", data);
-  console.log("Typed:", data);
-}
+import useDebounceValue from "./use-debounce-value";
 
 function App() {
+  const [q, setQ] = useState("");
+  const debouncedQ = useDebounceValue(q, 400);
+
+  useEffect(() => {
+    if (!debouncedQ) return;
+
+    // run API search with async/await
+    const search = async () => {
+      try {
+        const res = await fetch(
+          `/api/search?q=${encodeURIComponent(debouncedQ)}`
+        );
+        const data = await res.json();
+        console.log(data); 
+      } catch (err) {
+        console.error("API Error:", err);
+      }
+    };
+
+    search();
+  }, [debouncedQ]);
 
   return (
-    <form action={handleForm}>
-      <input name="name" />
-      <input name="age" />
-      <button type="submit">Submit</button>
-    </form>
+    <input
+      value={q}
+      onChange={(e) => setQ(e.target.value)}
+      placeholder="Search..."
+    />
   );
 }
-
 
 export default App;

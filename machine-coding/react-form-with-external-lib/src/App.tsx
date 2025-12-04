@@ -7,7 +7,11 @@ const FormSchema = z.object({
   age: z.coerce.number().min(1, "Age is required."),
 });
 
-type FormValues = z.infer<typeof FormSchema>
+type FormValues = z.infer<typeof FormSchema>;
+
+const handleFormSubmit = (data: FormValues) => {
+  console.log("data:", data);
+};
 
 function App() {
   const {
@@ -23,10 +27,6 @@ function App() {
 
   const values = getValues();
   console.log("values:", values);
-
-  const handleFormSubmit = (data: FormValues) => {
-    console.log("data:", data);
-  };
 
   return (
     <form

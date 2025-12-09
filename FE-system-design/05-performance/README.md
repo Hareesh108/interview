@@ -12,6 +12,7 @@
 ![Image](./images/topics.png)
 ![Image](./images/web-vitals.png)
 ![Image](./images/02_03.png)
+![Image](./images/tools.png)
 
 ## Tools
 
@@ -34,3 +35,5 @@
 - Lighthouse Tab <https://developer.chrome.com/docs/lighthouse/overview>
 - Network Tab
 - Performance Tab
+
+![Image](./images/tools.png)

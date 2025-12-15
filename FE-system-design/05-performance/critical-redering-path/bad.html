@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRP Example - Blocking</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BLOCKING CSS -->
+    <style>
+      body {
+        background: #111;
+        color: white;
+        font-family: Arial;
+      }
+    </style>
+
+    <!-- BLOCKING JS -->
+
+    <script type="text/javascript">
+      const start = new Date();
+      console.log("Start time", start.getSeconds());
+
+      const now = Date.now()
+
+      while (Date.now() - now < 5000) {}
+
+      const end = new Date();
+
+      console.log("End time", end.getSeconds());
+    </script>
+  </head>
+
+  <body>
+    <h1>Hello Critical Rendering Path</h1>
+    <p>This text appears late because JS blocks rendering.</p>
+  </body>
+</html>

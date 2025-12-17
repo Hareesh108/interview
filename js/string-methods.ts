@@ -47,18 +47,15 @@ const found = [...harsh.matchAll(/H(a)/g)];
 // console.log(harsh.substring(2,5));
 // console.log(harsh.substring(-1));
 
-console.log(harsh[Symbol.iterator]());
-console.log(harsh[Symbol.iterator]().next())
-console.log(harsh[Symbol.iterator]().next().value);
+// console.log(harsh[Symbol.iterator]());
+// console.log(harsh[Symbol.iterator]().next())
+// console.log(harsh[Symbol.iterator]().next().value);
 
-const items = harsh[Symbol.iterator]()
+// const items = harsh[Symbol.iterator]()
 
-for(let item of items){
-    console.log(item);
-}
+// for(let item of items){
+//     console.log(item);
+// }
 
-
-
-
-console.log(harsh.length);
+// console.log(harsh.length);
 

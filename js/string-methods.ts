@@ -29,10 +29,36 @@ const found = [...harsh.matchAll(/H(a)/g)];
 // console.log(harsh.slice(-2));
 // console.log(harsh.slice(-4,-2));
 
-console.log(harsh.split(""));
+// console.log(harsh.split(""));
+// console.log(harsh.split());
+// console.log(harsh.split("",2));
 
-const str = "The quick brown fox jumps over the lazy dog.";
+// const str = "The quick brown fox jumps over the lazy dog.";
 
-const words = str.split(" ");
-console.log(words);
-console.log(words[2]);
+// const words = str.split(" ");
+// console.log(words);
+// console.log(words[2]);
+
+
+// console.log(harsh.startsWith("Ha"));
+// console.log(harsh.startsWith("a"));
+
+// console.log(harsh.substring(2));
+// console.log(harsh.substring(2,5));
+// console.log(harsh.substring(-1));
+
+console.log(harsh[Symbol.iterator]());
+console.log(harsh[Symbol.iterator]().next())
+console.log(harsh[Symbol.iterator]().next().value);
+
+const items = harsh[Symbol.iterator]()
+
+for(let item of items){
+    console.log(item);
+}
+
+
+
+
+console.log(harsh.length);
+

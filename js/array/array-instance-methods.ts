@@ -108,4 +108,37 @@ const iterator = array.entries();
 
 // console.log(num.splice(1, 2));
 // console.log(num.splice(1, 3));
-console.log(num.splice(1,-1));
+// console.log(num.splice(1,-1));
+
+// console.log(num.some((i) => i % 2 === 2));
+
+// const checkSort = [3, 2, 8, 4, 82, 0];
+// console.log(checkSort.sort());
+// console.log(
+//   checkSort.sort((first, second) => {
+//     console.log(first, second);
+
+//     return first - second;
+//   })
+// );
+
+// console.log(num.toReversed());
+// console.log(num.toSorted());
+
+// console.log(num.toSpliced(1, 2, 6));
+// console.log(num.toString());
+
+// console.log(num.unshift(0));
+
+// console.log(num.values().next().value);
+
+// console.log(num.with(2, 6));
+
+// console.log(num[Symbol.iterator]().next().value);
+
+// console.log(num.length);
+
+// console.log(num[Symbol.unscopables].values);
+
+
+

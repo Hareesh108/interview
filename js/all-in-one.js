@@ -1,4 +1,6 @@
-console.log("sync: start");
+// 1 - 12 commented code ignore
+
+console.log("sync: start"); 
 
 // ---------------- SYNCHRONOUS ----------------
 
@@ -9,7 +11,7 @@ console.log("sync: start");
 
 // normal function
 function normalFn() {
-  console.log("3️⃣ sync: normal function");
+  console.log("sync: normal function");
 }
 normalFn();
 

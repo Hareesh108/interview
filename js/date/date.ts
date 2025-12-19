@@ -13,7 +13,8 @@ const test = new Date();
 // console.log(myBirthDay);
 // console.log(String(myBirthDay));
 
-const birth = new Date("Tue Jul 20 1999 11:30:40")
+// const birth = new Date("Tue Jul 20 1999 11:30:40")
+const birth = new Date()
 
 console.log(birth);
 

@@ -1,7 +1,7 @@
 export function ShimmerSkeleton() {
   return (
     <>
-      {Array.from({ length: 15 }).map((_, index) => (
+      {Array.from({ length: 25 }).map((_, index) => (
         <div
           key={index}
           className="border shadow-xs rounded-lg flex flex-col gap-2 animate-pulse"

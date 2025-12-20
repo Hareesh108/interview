@@ -27,8 +27,6 @@ export function Accordion({
 }: Readonly<AccordionProps>) {
   const isControlled = value !== undefined;
   const [internalValue, setInternalValue] = useState<string[]>([]);
-
-  console.log(internalValue);
   
   const openItems = isControlled ? value : internalValue;
 

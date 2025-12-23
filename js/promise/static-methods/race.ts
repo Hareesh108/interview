@@ -1,25 +1,24 @@
 import { promise1, promise2, promise3, promise4 } from "./promises.js";
 
-Promise.allSettled([promise2, promise1, promise3, promise4])
+Promise.race([promise2, promise1, promise3, promise4])
   .then((res) => {
+    console.log("hey");
+
     console.log(res);
   })
   .catch((error) => {
     console.log("Error:", error);
   });
 
-const fetchAllSettled = async () => {
+const fetchRace = async () => {
   try {
-    const res = await Promise.allSettled([
-      promise1,
-      promise2,
-      promise3,
-      promise4,
-    ]);
+    const res = await Promise.race([promise2, promise3, promise4]);
+
     console.log(res);
   } catch (e) {
+    console.log("hmm");
     console.log("Error:", e);
   }
 };
 
-fetchAllSettled();
+fetchRace();

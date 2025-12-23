@@ -1,40 +1,53 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
-export default function BasicThrottle() {
-  const previousTime = useRef(0);
+export default function ScrollThrottle() {
+  const lastCallRef = useRef(0);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const throttleDelay = 200; // ms
 
   const handleScroll = () => {
-    console.log("Scrolling...");
+    const now = Date.now();
+    const remaining = throttleDelay - (now - lastCallRef.current);
 
-    const throttle = 250
-    
+    const execute = () => {
+      lastCallRef.current = Date.now();
 
-    
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      console.log("Scroll Y:", scrollTop);
+
+      // 🔥 Infinite scroll condition
+      if (scrollTop + windowHeight >= documentHeight - 200) {
+        console.log("Load more data");
+      }
+    };
+
+    if (remaining <= 0) {
+      execute();
+    } else if (!timeoutRef.current) {
+      timeoutRef.current = setTimeout(() => {
+        timeoutRef.current = null;
+        execute();
+      }, remaining);
+    }
   };
 
   useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => document.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   return (
-    <>
-      <div className="w-xl m-auto mt-40 h-dvh">
-        <div className="flex flex-col gap-2 text-center">
-          Testing Throttle (Single Component)
-        </div>
-      </div>
-      <div className="w-xl m-auto mt-40 h-dvh text-center">
-        <div className="flex flex-col gap-2">
-          Testing Throttle (Single Component)
-        </div>
-      </div>
-      <div className="w-xl m-auto mt-40 h-dvh text-center">
-        <div className="flex flex-col gap-2">
-          Testing Throttle (Single Component)
-        </div>
-      </div>
-    </>
+    <div style={{ height: "200vh", padding: "20px" }}>
+      <h2>Scroll down 👇</h2>
+      <p>Open console to see throttled scroll logs.</p>
+    </div>
   );
 }

@@ -8,7 +8,7 @@ exports.promise1 = new Promise(function (resolve, reject) {
 });
 exports.promise2 = new Promise(function (resolve, reject) {
     setTimeout(function () {
-        reject("Reject");
+        reject(new Error("API error"));
     }, 2000);
 });
 exports.promise3 = new Promise(function (resolve, reject) {

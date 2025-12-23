@@ -6,7 +6,7 @@ export const promise1 = new Promise((resolve, reject) => {
 
 export const promise2 = new Promise((resolve, reject) => {
   setTimeout(() => {
-    reject("Reject");
+    reject(new Error("API error"));
   }, 2000);
 });
 

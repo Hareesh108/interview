@@ -1,26 +1,4 @@
-const promise1 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Resolved1");
-  }, 2000);
-});
-
-const promise2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject("Reject");
-  }, 2000);
-});
-
-const promise3 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Resolved2");
-  }, 3000);
-});
-
-const promise4 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Resolved3");
-  }, 3000);
-});
+import { promise1, promise2, promise3, promise4 } from "./promises.js";
 
 Promise.all([promise1, promise2, promise3, promise4])
   .then((res) => {

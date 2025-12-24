@@ -101,6 +101,9 @@ const iterator = array.entries();
 // console.log([,3].reverse());
 
 // console.log(num.shift());
+// console.log(num.unshift(0));
+// console.log(num);
+
 
 // console.log(num.slice(1, 3));
 // console.log(num.slice(1, -2));
@@ -128,7 +131,6 @@ const iterator = array.entries();
 // console.log(num.toSpliced(1, 2, 6));
 // console.log(num.toString());
 
-// console.log(num.unshift(0));
 
 // console.log(num.values().next().value);
 

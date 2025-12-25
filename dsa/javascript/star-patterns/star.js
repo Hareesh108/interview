@@ -24,7 +24,26 @@ function invertedTriangle(n) {
   for (let i = n; i >= 1; i--) {
     console.log("*".repeat(i));
   }
+
+  console.log("Hey");
+
+  for (let k = 0; k < n; k++) {
+    let res = "";
+    for (let j = 0; j < k + 1; j++) {
+      res += "*";
+    }
+    console.log(res);
+  }
+
+  for (let k = 0; k < n; k++) {
+    let res = "";
+    for (let j = 0; j < n - k; j++) {
+      res += "*";
+    }
+    console.log(res);
+  }
 }
+
 invertedTriangle(5);
 
 console.log();
@@ -45,14 +64,12 @@ function pyramid(n) {
 }
 pyramid(5);
 
-
 function invertedPyramid(n) {
   for (let i = 1; i <= n; i++) {
     console.log(" ".repeat(i - 1) + "*".repeat(2 * (n - i) + 1));
   }
 }
 invertedPyramid(5);
-
 
 console.log();
 
@@ -61,7 +78,6 @@ function diamond(n) {
   invertedPyramid(n - 1);
 }
 diamond(5);
-
 
 console.log();
 
@@ -88,7 +104,6 @@ function hollowSquare(n) {
 }
 hollowSquare(5);
 
-
 console.log();
 
 function numberPyramid(n) {
@@ -102,8 +117,26 @@ function numberPyramid(n) {
     console.log(" ".repeat(n - i) + inc + dec);
   }
 }
+
 numberPyramid(5);
 
+function numberPyramid1(n) {
+  for (let i = 1; i <= n; i++) {
+    let inc = "";
+    let dec = "";
 
+    for (let j = 1; j <= i; j++) {
+      inc += j;
+    }
 
+    // j = 1 -1 = 0; 0 >= 1 ; --> false
+    // j = 2 -1 = 1; 1 >= 1 ; 0  -> 1
+    for (let j = i - 1; j >= 1; j--) {
+      dec += j;
+    }
 
+    console.log(" ".repeat(n - i) + inc + dec);
+  }
+}
+
+numberPyramid1(5);

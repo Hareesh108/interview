@@ -1,3 +1,21 @@
+// Yes, this is nothing but adding your own method to Function.prototype, which makes it available to all functions.
+// call
+Function.prototype.myCall = function (context, ...args) {
+  context.fn = this;
+  context.fn(...args);
+};
+
+// apply
+Function.prototype.myApply = function (context, args) {
+  context.fn = this;
+  context.fn(...args);
+};
+
+// bind
+Function.prototype.myBind = function (context, ...args) {
+  return (...rest) => this.apply(context, [...args, ...rest]);
+};
+
 // IMPLICIT
 
 const implicit = {
@@ -14,12 +32,14 @@ implicit.greet();
 const explicit1 = { username: "Harry" };
 const explicit2 = { username: "Prince" };
 
+// Function Borrowing
 function greet(message, punct) {
   console.log(`${message}, my name is ${this.username}${punct}`);
 }
 
 // 1. call(): Invoke immediately with individual arguments
 greet.call(explicit1, "Hello", "!"); // Output: Hello, my name is Alice!
+greet.myCall(explicit1, "Hello", "!") // myCall can make own methods
 
 // 2. apply(): Invoke immediately with arguments in an array
 greet.apply(explicit2, ["Hi", "."]); // Output: Hi, my name is Bob.

@@ -1,0 +1,184 @@
+🚨 Frontend Interviews Are NOT About Basics Anymore 🚨
+If you’re a Frontend / React developer, these are the coding-based questions most people ignore — and that’s why they get rejected.
+
+🔥 JavaScript (Tricky Coding Questions)
+• Implement debounce & throttle from scratch
+• Flatten a deeply nested array (without flat)
+• Output-based questions on closures inside loops
+• Polyfill for bind, call, apply
+• Implement once() function
+• Deep clone an object (handle nested objects & arrays)
+• Predict output with setTimeout + promises + async/await
+• Implement memoization function
+• Convert callback-based code to Promise-based
+
+🔥 React (Coding + Real Interview Traps)
+• Build a custom hook (useDebounce, usePrevious)
+• Prevent unnecessary re-renders in a large component
+• Implement search with debounce
+• Controlled vs uncontrolled form (code difference)
+• Fix infinite re-render caused by useEffect
+• Implement lazy loading without breaking SEO
+Explain & fix key-related rendering bugs
+• Share state between unrelated components (without Redux)
+
+🔥 DOM / Browser (Most Ignored Section)
+• Event delegation – implement with example
+• Difference between event.target vs event.currentTarget
+• Build a modal from scratch (focus trap, ESC close)
+• Implement infinite scroll
+• Detect click outside a component
+• Intersection Observer use case
+
+🔥 DSA for Frontend (YES, It’s Asked!)
+• Two Sum (optimized approach)
+• Sliding window problems
+• String manipulation problems
+• LRU Cache (conceptual + coding)
+• Debounce search using queue logic
+
+
+
+Code splitting isn’t about React.lazy() syntax.
+It’s about performance, user experience, and real-world tradeoffs.
+
+In this article, I break down:
+• Where code splitting actually helps
+• Common mistakes engineers make
+• Real metrics from production apps
+• How to answer this question at a senior level
+
+https://medium.com/@priyankadaida/the-react-interview-question-everyone-27e98f71dc59
+
+
+In a Javascript L1 & L2 round the following questions can be asked from interviewer.
+
+1. What is the difference between 'Pass by Value' and 'Pass by Reference'?
+2. What is the difference between map and filter ?
+3. What is the difference between map() and forEach() 
+4. What is the difference between Pure and Impure functions?
+5. What is the difference between for-in and for-of ?
+6. What are the differences between call(), apply() and bind() ?
+7. List out some key features of ES6 ?
+8. What’s the spread operator in javascript ?
+9. What is rest operator in javascript ?
+10. What are DRY, KISS, YAGNI, SOLID Principles ?
+11. What is temporal dead zone ?
+12. Different ways to create object in javascript ?
+13. Whats the difference between Object.keys,values and entries
+14. Whats the difference between Object.freeze() vs Object.seal()
+15. What is a polyfill in javascript ?
+16. What is generator function in javascript ?
+17. What is prototype in javascript ?
+18. What is IIFE ?
+19. What is CORS ?
+20. What are the different datatypes in javascript ?
+21. What are the difference between typescript and javascript ?
+22. What is authentication vs authorization ?
+23. Difference between null and undefined ?
+24. What is the output of 3+2+”7” ?
+25. Slice vs Splice in javascript ?
+26. What is destructuring ?
+27. What is setTimeOut in javascript ?
+28. What is setInterval in javascript ?
+29. What are Promises in javascript ?
+30. What is a callstack in javascript ?
+31. What is a closure ?
+32. What are callbacks in javascript ?
+33. What are Higher Order Functions in javascript ?
+34. What is the difference between == and === in javascript ?
+35. Is javascript a dynamically typed language or a statically typed language 
+36. What is the difference between Indexeddb and sessionstorage ?
+37. What are Interceptors ?
+38. What is Hoisting ?
+39. What are the differences let, var and const ?
+41. Differences between Promise.all, allSettled, any, race ?
+42. What are limitations of arrow functions?
+43. What is difference between find vs findIndex ?
+44. What is tree shaking in javascrip
+45. What is the main difference between Local Storage and Session storage
+46. What is eval()
+47. What is the difference between Shallow copy and deep copy
+48. What are the difference between undeclared and undefined variables
+49. What is event bubbling
+50. What is event capturing
+51. What are cookies
+52. typeOf operator
+53. What is this in javascript and How it behaves in various scenarios 
+54. How do you optimize the performance of application
+55. What is meant by debouncing and throttling 
+
+
+
+If I am taking your React Interview, I’m asking you these 30 questions 100%:
+
+1. What are the limitations of React in building large-scale applications?
+
+2. How does React manage the Virtual DOM, and what are the benefits?
+
+3. Can React Hooks fully replace Redux for state management? Explain why or why not.
+
+4. What are the best practices for managing state in large React applications?
+
+5. How would you optimize performance in a React app with large component trees?
+
+6. Explain React's Strict Mode and its impact on development.
+
+7. How can you prevent unnecessary re-renders in React functional components?
+
+8. Describe the key differences between functional and class components in React.
+
+9. What is the significance of the React Fiber architecture?
+
+10. How does React handle side effects, and how can you manage them effectively?
+
+11. Explain the differences between `useMemo()` and `useCallback()` in React.
+
+12. How would you implement dynamic form handling and validation in React?
+
+13. What is lazy loading in React, and how does it improve application performance?
+
+14. How would you handle errors in a React app, and what is the role of error boundaries?
+
+15. What are the benefits of server-side rendering (SSR) in React applications?
+
+16. How do you handle styling in React components? Discuss different approaches.
+
+17. How would you pass data between sibling components in React without using Redux?
+
+18. Explain the use case of `useEffect()` for fetching data from an API.
+
+19. How do you handle asynchronous operations in React using `async/await` or Promises?
+
+20. How would you re-render a component when the window is resized?
+
+21. Describe how React Context API can be used for state management in an app.
+
+22. What is the role of React Router, and how does it work with dynamic routing?
+
+23. Explain the concept of controlled and uncontrolled components in React.
+
+24. How would you optimize React app performance when handling large lists or grids?
+
+25. Explain the difference between shallow and deep comparison in React's `shouldComponentUpdate`.
+
+26. How do you handle asynchronous code execution and state updates in React?
+
+27. How would you implement custom hooks to abstract logic in React?
+
+28. What are higher-order components (HOCs) in React, and how are they used?
+
+29. How would you implement a search feature with debouncing in React?
+
+30. Explain React's reconciliation process and how it updates the DOM efficiently. 
+
+
+But in actual frontend work, these rarely come up.
+
+What I spend most of my time doing instead:
+– Integrating APIs and handling loading, error, and empty states
+– Building forms that are intuitive, accessible, and well-validated
+– Managing state cleanly as applications scale
+– Improving performance and preventing unnecessary re-renders
+– Implementing search, filters, pagination, and debouncing
+– Designing component structures that are easy to maintain and extend

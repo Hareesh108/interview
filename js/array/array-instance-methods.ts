@@ -109,9 +109,31 @@ const iterator = array.entries();
 // console.log(num.slice(1, -2));
 // console.log(num.slice(1));
 
-// console.log(num.splice(1, 2));
-// console.log(num.splice(1, 3));
-// console.log(num.splice(1,-1));
+// array.splice(startIndex, deleteCount, item1, item2, ...)
+// startIndex → where to start changing the array
+// deleteCount → how many elements to remove
+// items → elements to insert (optional)
+
+const months = ["Jan", "March", "April", "June"];
+months.splice(1, 0, "Feb");
+// Inserts at index 1
+console.log(months);
+// Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+
+months.splice(4, 1, "May");
+console.log(months);
+// Replaces 1 element at index 4
+// Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+months.splice(5, 1, "July");
+console.log(months);
+
+months.splice(0);
+console.log(months);
+
+console.log(num.splice(1, 2));
+console.log(num.splice(1, 3));
+console.log(num.splice(1,-1));
 
 // console.log(num.some((i) => i % 2 === 2));
 

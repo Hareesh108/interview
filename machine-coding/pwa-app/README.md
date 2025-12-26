@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Service worker file .js and workbox*.js file
+
+### WEB Manifest Generator
+
+<https://www.infyways.com/tools/web-manifest-generator/>
+
 First, run the development server:
 
 ```bash

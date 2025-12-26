@@ -182,3 +182,72 @@ What I spend most of my time doing instead:
 – Improving performance and preventing unnecessary re-renders
 – Implementing search, filters, pagination, and debouncing
 – Designing component structures that are easy to maintain and extend
+
+
+Some of these topics are frequently asked.
+Others quietly separate average answers from strong ones.
+
+Here’s what I’m actively revising 👇
+
+⚙️ Core JavaScript Internals
+
+• Type coercion and implicit conversions
+• var, let, const (hoisting, TDZ, reference errors)
+• Function hoisting vs variable hoisting
+• Primitive vs non-primitive data types
+• null vs undefined
+• Strict mode and why it exists
+
+⏳ Async JavaScript & Execution Model
+
+• Event Loop (call stack, microtasks, macrotasks)
+• setTimeout / setInterval and how to stop them
+• Callbacks and callback hell
+• Promises (then, catch, finally, Promise APIs)
+• async/await vs promises
+• Writing async code in multiple patterns
+• Web Workers and off-main-thread execution
+
+🧠 Functions, Scope & Objects
+
+• Closures (real use cases, not theory)
+• Currying (normal & infinite)
+• IIFE and use cases
+• Arrow functions vs normal functions
+• this keyword in different contexts
+• call, apply, bind
+• Shallow vs deep copy
+• Object.freeze() vs Object.seal()
+
+🔗 Prototypes, OOP & FP
+
+• Prototypes & prototypal inheritance
+• Classes, constructors & super
+• Core OOP concepts in JavaScript
+• Functional programming vs OOP
+• Common design patterns
+• SOLID principles explained in JS terms
+
+📦 Arrays, Objects & DOM
+
+• Array methods (map, filter, reduce, forEach)
+• for…of vs for…in
+• String, object & array utility methods
+• DOM vs BOM
+• Event bubbling, capturing & delegation
+
+🚀 Performance & Practical Topics
+
+• Debouncing & throttling
+• Immutability
+• Memory leaks & garbage collection
+• Improving JavaScript performance
+• ES6+ features
+• Fetch vs Axios
+• REST APIs vs GraphQL
+• LocalStorage vs SessionStorage vs Cookies
+
+✨ Extra practice alongside this list:
+– Writing polyfills (bind, map, reduce)
+– Solving real interview & machine-coding questions
+– Explaining answers out loud (this matters more than people think)

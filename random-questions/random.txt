@@ -251,3 +251,6 @@ Here’s what I’m actively revising 👇
 – Writing polyfills (bind, map, reduce)
 – Solving real interview & machine-coding questions
 – Explaining answers out loud (this matters more than people think)
+
+https://flexiple.com/redux/interview-questions
+https://flexiple.com/react/interview-questions

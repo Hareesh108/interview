@@ -1,6 +1,6 @@
-import Better from "./better";
-import Optimized from "./optimized";
-import Simple from "./simple";
+import Better from "./components/better";
+import Optimized from "./components/optimized";
+import Simple from "./components/simple";
 
 export default function App() {
 
@@ -8,8 +8,8 @@ export default function App() {
 
   return (
     <>
-      {/* <Simple /> */}
-      {/* <Better/> */}
+      {/* <Simple />
+      <Better/> */}
       <Optimized/>
     </>
   );

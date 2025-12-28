@@ -1,15 +1,11 @@
-// for (var i = 0; i < 4; i++) {
-//   ((g) => {
-//     setTimeout(() => {
-//       console.log(g);
-//     }, 1000);
-//   })(i);
-// }
+const p1 = { name: "Harry" };
+const p2 = { name: "Harsh" };
 
-// console.log(i);
+function greet(p) {
+  console.log(`Hi, ${this.name}...${p}`);
+}
 
-
-const callme = h1 => h2 => h3 => h1 + h2 + h3
-
-const new1 = callme(2)(3)(1)
-console.log(new1);
+greet.call(p1, 10);
+const res = greet.bind(p2, 10);
+console.log(res);
+res()

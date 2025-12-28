@@ -1,6 +1,4 @@
----
-
-# 📄 JavaScript Functions — 1-Page Cheat Sheet
+# 📄 JavaScript Functions
 
 ## 🧠 Core Idea
 

@@ -26,6 +26,7 @@ function App() {
   console.log("errors:", errors);
 
   const values = getValues();
+  
   console.log("values:", values);
 
   return (

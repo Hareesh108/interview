@@ -272,3 +272,65 @@ Here are the Top 10 common questions I was asked 👇
 🔟 Currying for Infinite Sum
 👉 sum(10)(20)(30)() → 60
 👉 sum(10)(20)(30)(40)(50)(60)() → 210
+
+If you’re a Frontend / React / JavaScript developer, these are the real coding problems interviewers expect you to solve — often live.
+
+🔹 JavaScript Coding (MOST ASKED)
+
+1️⃣ Implement debounce() from scratch
+2️⃣ Implement throttle() from scratch
+3️⃣ Flatten a deeply nested array
+4️⃣ Polyfill for map, filter, reduce
+5️⃣ Remove duplicates from an array (without using Set)
+6️⃣ Deep clone an object
+7️⃣ Find the first non-repeating character in a string
+8️⃣ Implement memoization
+9️⃣ Convert callback-based function to Promise
+🔟 Write a custom bind() polyfill
+
+🔹 React Coding (Live Round Favorites)
+
+• Build a counter with start / pause / reset
+• Create a search filter with debouncing
+• Implement controlled vs uncontrolled input
+• Build a Todo app with add/edit/delete
+• Create pagination from scratch
+• Render a dynamic form from JSON
+• Prevent unnecessary re-renders in a component
+• Implement lazy loading manually
+
+🔹 DOM & Browser Coding
+
+• Event delegation implementation
+• Build a modal from scratch (no libraries)
+• Implement infinite scrolling
+• Drag & drop using vanilla JS
+• Detect click outside an element
+
+** Uber L4 Frontend Interview Experience **
+
+## Screening Round
+Asked to build a UI component using any framework. Opted for React. (Exact question: https://lnkd.in/dNj9A9pH)
+
+## 1️⃣ Coding Round – DSA
+Designed a task queue with controlled concurrency:
+
+* Execute up to K tasks in parallel
+* Queue remaining tasks
+* Support success/error callbacks
+* Allow custom executors for logging, retries, etc.
+
+Similar question: https://lnkd.in/dKbsrdAa
+
+## 2️⃣ Coding Round – UI
+Similar to screening round. Asked to build a Modal Management system. (Exact question: https://lnkd.in/dxUnZpsC)
+
+## 3️⃣ UI System Design
+Designed a Calendar application (like Google Calendar). Here is my detailed solution: https://lnkd.in/d2wUMvnm
+
+## Managerial Round
+Discussion around leadership, ownership, teamwork, and past experiences.
+
+Great learning experience overall, especially the focus on real-world frontend problems, UI architecture, and system thinking. 👨‍💻🎯
+
+If anyone is preparing for frontend interviews, happy to discuss more in comments!

@@ -1,21 +1,23 @@
-const testDeep = { name: "Harsh", a: { b: "dh" }, c: ["Hello"] };
-
-const deepCopy = (obj) => {
-  if (obj === null || typeof obj !== "object") return obj;
-
-  const copy = Array.isArray(obj) ? [] : {};
-
-  for (let key in obj) {
-    copy[key] = deepCopy(obj[key]);
-    console.log(key);
-    console.log(obj[key]);
-    console.log(copy);
-    console.log("------------");
+const res = (n) => {
+  if (n) {
+    return true;
+  } else {
+    return false;
   }
-
-  return copy;
 };
 
-const test2 = deepCopy(testDeep);
+console.log(res(10));
 
-console.log(test2);
+const res1 = async (n) => {
+  return await new Promise((res, rej) => {
+    setTimeout(() => {
+      res("true");
+    }, 2000);
+
+    setTimeout(() => {
+      rej("false");
+    }, 3000);
+  });
+};
+
+await res1().then((v) => console.log(v));

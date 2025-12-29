@@ -72,7 +72,7 @@ In a Javascript L1 & L2 round the following questions can be asked from intervie
 17. What is prototype in javascript ?
 18. What is IIFE ?
 19. What is CORS ?
-20. What are the different datatypes in javascript ?
+20. What are the different data types in javascript ?
 21. What are the difference between typescript and javascript ?
 22. What is authentication vs authorization ?
 23. Difference between null and undefined ?
@@ -88,14 +88,14 @@ In a Javascript L1 & L2 round the following questions can be asked from intervie
 33. What are Higher Order Functions in javascript ?
 34. What is the difference between == and === in javascript ?
 35. Is javascript a dynamically typed language or a statically typed language 
-36. What is the difference between Indexeddb and sessionstorage ?
+36. What is the difference between IndexedDb and sessionStorage ?
 37. What are Interceptors ?
 38. What is Hoisting ?
 39. What are the differences let, var and const ?
 41. Differences between Promise.all, allSettled, any, race ?
 42. What are limitations of arrow functions?
 43. What is difference between find vs findIndex ?
-44. What is tree shaking in javascrip
+44. What is tree shaking in javascript
 45. What is the main difference between Local Storage and Session storage
 46. What is eval()
 47. What is the difference between Shallow copy and deep copy
@@ -334,3 +334,55 @@ Discussion around leadership, ownership, teamwork, and past experiences.
 Great learning experience overall, especially the focus on real-world frontend problems, UI architecture, and system thinking. 👨‍💻🎯
 
 If anyone is preparing for frontend interviews, happy to discuss more in comments!
+
+
+
+ I have been interviewing a lot of frontend engineers. 
+
+Some were solid. A few were exceptional.
+What separated the 𝐠𝐫𝐞𝐚𝐭 ones? They didn’t just code — they understood 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐬𝐜𝐚𝐥𝐚𝐛𝐢𝐥𝐢𝐭𝐲, 𝐚𝐧𝐝 𝐮𝐬𝐞𝐫 𝐞𝐱𝐩𝐞𝐫𝐢𝐞𝐧𝐜𝐞.
+
+Here are the questions that really 𝐬𝐞𝐩𝐚𝐫𝐚𝐭𝐞 𝐠𝐨𝐨𝐝 𝐟𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐝𝐞𝐯𝐬 𝐟𝐫𝐨𝐦 𝐠𝐫𝐞𝐚𝐭 𝐨𝐧𝐞𝐬:
+
+
+🔹 𝐂𝐨𝐫𝐞 𝐖𝐞𝐛 𝐅𝐮𝐧𝐝𝐚𝐦𝐞𝐧𝐭𝐚𝐥𝐬
+1. Walk me through what happens when you 𝐭𝐲𝐩𝐞 𝐚 𝐔𝐑𝐋 𝐚𝐧𝐝 𝐡𝐢𝐭 𝐄𝐧𝐭𝐞𝐫 — from request to render.
+2. Explain the 𝐂𝐒𝐒 𝐛𝐨𝐱 𝐦𝐨𝐝𝐞𝐥 and how `box-sizing` affects layouts.
+3. How do you ensure 𝐜𝐫𝐨𝐬𝐬-𝐛𝐫𝐨𝐰𝐬𝐞𝐫 𝐜𝐨𝐦𝐩𝐚𝐭𝐢𝐛𝐢𝐥𝐢𝐭y and 𝐠𝐫𝐚𝐜𝐞𝐟𝐮𝐥 𝐝𝐞𝐠𝐫𝐚𝐝𝐚𝐭𝐢𝐨𝐧?
+
+---
+
+🔹 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭 𝐃𝐞𝐞𝐩 𝐃𝐢𝐯𝐞
+4. Explain 𝐜𝐥𝐨𝐬𝐮𝐫𝐞𝐬 in JavaScript with a real-world analogy.
+5. Difference between `==` and `===` — when would you choose each?
+6. Describe 𝐞𝐯𝐞𝐧𝐭 𝐛𝐮𝐛𝐛𝐥𝐢𝐧𝐠 𝐯𝐬. 𝐜𝐚𝐩𝐭𝐮𝐫𝐢𝐧𝐠 with a practical example.
+7. Difference between 𝐝𝐞𝐛𝐨𝐮𝐧𝐜𝐢𝐧𝐠 and 𝐭𝐡𝐫𝐨𝐭𝐭𝐥𝐢𝐧𝐠 — when do you use each?
+8. How does the 𝐞𝐯𝐞𝐧𝐭 𝐥𝐨𝐨𝐩 𝐰𝐨𝐫𝐤 𝐢𝐧 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭? 𝐖𝐡𝐲 𝐢𝐬 𝐢𝐭 𝐢𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 𝐟𝐨𝐫 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞? 
+
+---
+
+ 🔹 𝐑𝐞𝐚𝐜𝐭 & 𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞
+9. How would you 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐫𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 𝐟𝐨𝐫 𝐚 𝐑𝐞𝐚𝐜𝐭 𝐥𝐢𝐬𝐭 𝐰𝐢𝐭𝐡 𝟏𝟎,𝟎𝟎𝟎 𝐢𝐭𝐞𝐦𝐬?
+10. How do you 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭 𝐜𝐨𝐝𝐞-𝐬𝐩𝐥𝐢𝐭𝐭𝐢𝐧𝐠 𝐚𝐧𝐝 𝐛𝐮𝐧𝐝𝐥𝐞 𝐨𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧 in React? 
+11. How would you implement 𝐥𝐚𝐳𝐲 𝐥𝐨𝐚𝐝𝐢𝐧𝐠 for images and media?
+12. How do you handle 𝐫𝐞𝐚𝐥-𝐭𝐢𝐦𝐞 𝐮𝐩𝐝𝐚𝐭𝐞𝐬 without degrading performance?
+13. What’s your approach to 𝐬𝐭𝐚𝐭𝐞 𝐦𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧t in a large React application?
+
+---
+
+🔹 𝐀𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐲 & 𝐔𝐗
+14. What steps do you take to make a website 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐥𝐞 (𝐖𝐂𝐀𝐆 𝐜𝐨𝐦𝐩𝐥𝐢𝐚𝐧𝐜𝐞)?
+15. How do you handle 𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 (𝐢𝟏𝟖𝐧) 𝐚𝐧𝐝 𝐥𝐨𝐜𝐚𝐥𝐢𝐳𝐚𝐭𝐢𝐨𝐧 (𝐥𝟏𝟎𝐧) in a large app? 
+
+---
+
+🔹 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 & 𝐒𝐜𝐚𝐥𝐚𝐛𝐢𝐥𝐢𝐭𝐲
+16. How would you 𝐝𝐞𝐬𝐢𝐠𝐧 𝐚 𝐟𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐚𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞 𝐟𝐨𝐫 𝐚 𝐡𝐢𝐠𝐡-𝐭𝐫𝐚𝐟𝐟𝐢𝐜 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧? 
+17. How do you handle 𝐀𝐏𝐈 𝐞𝐫𝐫𝐨𝐫𝐬, 𝐫𝐞𝐭𝐫𝐢𝐞𝐬, 𝐚𝐧𝐝 𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐞s in React?
+18. Compare 𝐥𝐨𝐜𝐚𝐥𝐒𝐭𝐨𝐫𝐚𝐠𝐞, 𝐬𝐞𝐬𝐬𝐢𝐨𝐧𝐒𝐭𝐨𝐫𝐚𝐠𝐞, 𝐚𝐧𝐝 𝐜𝐨𝐨𝐤𝐢𝐞𝐬 — in terms of security and use cases.
+
+---
+
+🔹 𝐓𝐞𝐬𝐭𝐢𝐧𝐠 & 𝐃𝐞𝐛𝐮𝐠𝐠𝐢𝐧𝐠
+19. What’s your 𝐭𝐞𝐬𝐭𝐢𝐧𝐠 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐲 for frontend apps (unit, integration, E2E)?
+20. Tell me about a time you 𝐝𝐞𝐛𝐮𝐠𝐠𝐞𝐝 𝐚 𝐭𝐫𝐢𝐜𝐤𝐲 𝐟𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐛𝐮𝐠 — what was your process?

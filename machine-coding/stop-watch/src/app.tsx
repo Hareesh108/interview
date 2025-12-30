@@ -5,15 +5,24 @@ export default function Stopwatch() {
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  console.log(time);
+  
+  
+
   useEffect(() => {
     if (isRunning) {
       intervalRef.current = setInterval(() => {
         setTime((prev) => prev + 10);
       }, 10);
     }
+    console.log(">>>>>>",intervalRef.current);
+    
 
     return () => {
+      
+      console.log("Hi");
       if (intervalRef.current) {
+        console.log("bye");
         clearInterval(intervalRef.current);
         intervalRef.current = null;
       }

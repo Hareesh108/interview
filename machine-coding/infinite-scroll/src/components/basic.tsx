@@ -22,7 +22,7 @@ function Basic() {
   const handleScroll = useCallback(() => {
     console.log("scrolling....");
 
-    const next = document.body.scrollHeight <= scrollY + innerHeight;
+    const next = scrollY + innerHeight >= document.body.scrollHeight;
 
     if (next) fetchMemes();
   }, []);

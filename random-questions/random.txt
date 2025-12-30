@@ -386,3 +386,46 @@ Here are the questions that really 𝐬𝐞𝐩𝐚𝐫𝐚𝐭𝐞 𝐠𝐨𝐨
 🔹 𝐓𝐞𝐬𝐭𝐢𝐧𝐠 & 𝐃𝐞𝐛𝐮𝐠𝐠𝐢𝐧𝐠
 19. What’s your 𝐭𝐞𝐬𝐭𝐢𝐧𝐠 𝐬𝐭𝐫𝐚𝐭𝐞𝐠𝐲 for frontend apps (unit, integration, E2E)?
 20. Tell me about a time you 𝐝𝐞𝐛𝐮𝐠𝐠𝐞𝐝 𝐚 𝐭𝐫𝐢𝐜𝐤𝐲 𝐟𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐛𝐮𝐠 — what was your process?
+
+
+20 JavaScript Questions Every Developer Should Know
+
+1. What is the difference between map(), filter(), and reduce()?
+
+2. Explain the difference between function declarations and function expressions
+
+3. What is the spread operator and rest parameter?
+
+4. How does JavaScript handle type coercion?
+
+5. What are higher-order functions?
+
+6. Explain callback functions and callback hell.
+
+7. What is memoization and why is it useful?
+
+8. What are template literals and their advantages?
+
+9. Explain the concept of currying
+
+10. What is the difference between slice() and splice()?
+
+11. What is the difference between innerHTML, textContent, and innerText?
+
+12. Explain how the setTimeout and setInterval functions work
+
+13. What are JavaScript modules and why are they important?
+
+14. What is the difference between for...in and for...of loops?
+
+15. Explain what IIFE (Immediately Invoked Function Expression) is.
+
+16. What is the arguments object and how does it differ from rest parameters?
+
+17. Explain the difference between Object.freeze() and Object.seal()
+
+18. What are Web APIs and how do they relate to JavaScript?
+
+19. What is NaN and how do you check for it?
+
+20. Explain the concept of debouncing and throttling

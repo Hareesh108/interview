@@ -17,6 +17,21 @@ const flatArray = (arr, res = []) => {
 
 console.log(flatArray(arr));
 
+
+const flatArray1 = (arr, res = []) => {
+  for (const element of arr) {
+    if (Array.isArray(element)) {
+      flatArray1(element, res);
+    } else {
+      res.push(element);
+    }
+  }
+
+  return res;
+};
+
+console.log(flatArray1(arr));
+
 const flatArrayReduce = (arr) =>
   arr.reduce(
     (acc, item) =>

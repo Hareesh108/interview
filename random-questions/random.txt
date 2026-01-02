@@ -569,3 +569,112 @@ If you’re actively preparing for frontend interviews,
  save this post and come back to it before your next call 🚀
 
 Feel free to share it with someone who might need this today.
+
+Here are the exact coding topics interviewers keep repeating 👇
+
+🧠 JavaScript — Logic & Fundamentals (Most Common)
+
+These come up in almost every technical round:
+
+1️⃣ Write debounce() from scratch
+2️⃣ Implement throttle() manually
+3️⃣ Flatten a nested array (no built-ins)
+4️⃣ Create polyfills — .map(), .filter(), .reduce()
+5️⃣ Remove duplicates without using Set()
+6️⃣ Deep clone an object — including nested data
+7️⃣ First non-repeating character in a string
+8️⃣ Implement memoization
+9️⃣ Convert callbacks → Promises
+🔟 Custom polyfill for .bind()
+
+⚛️ React-Specific Coding Tasks
+
+These often happen in live interviews or take-home assessments:
+
+• Build a counter — start, pause, reset
+• Search bar + debouncing for API calls
+• Controlled vs uncontrolled input form
+• Basic Todo app — add, edit, delete
+• Pagination — internal logic, edge cases, loading states
+• Generate a dynamic form using JSON config
+• Prevent unnecessary re-renders (React.memo, useCallback)
+• Create lazy loading manually
+
+🌐 Browser + DOM Tasks
+
+Perfect for showing raw fundamentals:
+
+• Event delegation — implement manually
+• Create a modal — from scratch, no library
+• Infinite scroll using scroll events + API
+• Drag-and-drop UI using vanilla JS
+• Detect click outside of any given element
+
+🎯 Why These Matter
+
+Because these questions reveal:
+
+✔ Can you think through logic under pressure?
+✔ Do you understand how the browser works?
+✔ Can you build UI without relying on libraries?
+✔ Do you understand React performance patterns?
+
+Your portfolio helps you get shortlisted —
+your fundamentals help you get hired.
+
+
+If you’re aiming to build real products that scale, or you're preparing for serious frontend interviews, these are the concepts that actually get evaluated. Code is easy—judgement and decisions are hard. Here is what matters in the real world:
+
+Pagination – Break large data into pages for faster load and better UX.
+
+Infinite Scroll – Load more on scroll, but balance with performance and accessibility.
+
+Debouncing & Throttling – Control event-heavy functions like search, resize, scroll.
+
+WebSockets – Real-time updates for chat, dashboards, notifications.
+
+REST vs GraphQL – Pick simplicity vs flexibility based on API and UI needs.
+
+LocalStorage vs Cookies – Know where to store sensitive data and what persists.
+
+Authentication vs Authorization – Identity vs permissions.
+
+Global State Management – Redux, Zustand, Jotai—choose only when shared state is real.
+
+Lazy Loading – Deliver components only when the user needs them.
+
+Code Splitting – Reduce bundle size and load only required JS chunks.
+
+Bundle Optimization – Trim packages, tree-shake, import smartly.
+
+Tree Shaking – Remove unused code automatically during build.
+
+Memoization (useMemo, useCallback) – Avoid wasteful recalculations and re-renders.
+
+Caching (Client & Server) – Store results and skip unnecessary calls.
+
+CSR vs SSR vs SSG vs ISR – Rendering decisions based on SEO, speed & data freshness.
+
+Core Web Vitals (LCP, INP, CLS) – Metrics that actually reflect user experience.
+
+Optimistic UI – Show instant UI updates before server confirms.
+
+React Suspense – Manage loading states elegantly.
+
+Image Optimization (WebP, AVIF) – Ship lighter images for faster pages.
+
+Accessibility (a11y) – Keyboard-first, readable, inclusive UI for all users.
+
+Testing (Jest, RTL, Playwright) – Confidence through automation.
+
+Security Basics (XSS, CSRF, CORS) – Protection starts on the frontend.
+
+Micro-Frontends – Independent modules, scalable teams.
+
+Error Boundaries – Prevent UI crashes from breaking user flow.
+
+Performance Profiling – Measure before you optimize.
+
+Frontend is NOT just React or Tailwind. It is the ability to make trade-offs: choosing the right rendering strategy, caching layer, UX pattern, and security boundary.
+
+If you master these, you’re already ahead of 90% of developers.

@@ -678,3 +678,19 @@ Performance Profiling – Measure before you optimize.
 Frontend is NOT just React or Tailwind. It is the ability to make trade-offs: choosing the right rendering strategy, caching layer, UX pattern, and security boundary.
 
 If you master these, you’re already ahead of 90% of developers.
+
+These companies pay you well, but they’ll test every bit of your problem-solving before you get there.
+Here are some real easy-to-medium questions that I was actually asked in interviews:
+
+1. Flatten a deeply nested object to dot paths and unflatten back
+2. Implement cancellable fetch with an AbortController wrapper
+3. Generate valid parentheses combinations for n pairs
+4. Implement once(fn) that runs a function only once
+5. Build a simple LRU cache
+6. Given a stream of integers, return median at each step (Hint: Two heaps)
+7. Convert snake_case → camelCase recursively (with arrays)
+8. Implement set(obj, path, value) to create nested paths
+9. Write a deep-equal function that tolerates order-insensitive arrays of primitives
+10. Implement infinite scroll fetching batches, handling race conditions
+
+🔑 These are just a glimpse. Over time, I’ve built a collection of such questions, and more importantly, a blueprint for structured frontend interview prep.

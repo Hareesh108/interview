@@ -694,3 +694,21 @@ Here are some real easy-to-medium questions that I was actually asked in intervi
 10. Implement infinite scroll fetching batches, handling race conditions
 
 🔑 These are just a glimpse. Over time, I’ve built a collection of such questions, and more importantly, a blueprint for structured frontend interview prep.
+
+
+# 𝙅𝘼𝙑𝘼𝙎𝘾𝙍𝙄𝙋𝙏 — 𝙏𝙚𝙘𝙝𝙣𝙞𝙘𝙖𝙡 𝙍𝙤𝙪𝙣𝙙
+• How would you implement your own Promise.allSettled() and handle edge cases?
+• What’s your approach to optimizing expensive computations using memoization?
+• How does the event loop prioritize microtasks vs macrotasks in complex async flows?
+• How would you build a custom localStorage wrapper with expiry & fallback logic?
+• Explain how prototype inheritance works with a real example (not theory).
+• How do you detect & fix memory leaks in a large JavaScript codebase?
+
+# 𝙍𝙀𝘼𝘾𝙏.𝙅𝙎 — 𝘼𝙘𝙩𝙪𝙖𝙡 𝙏𝙚𝙘𝙝𝙣𝙞𝙘𝙖𝙡 𝙍𝙤𝙪𝙣𝙙 𝙌𝙨
+
+• How do you split React components for both performance & maintainability?
+• What happens internally when React reconciles a component tree?
+• How would you implement a global error boundary system for API & UI failures?
+• How do you handle race conditions in React when multiple API calls fire simultaneously?
+• How would you build a custom hook for data fetching with caching + refetch logic?
+• What would be your approach to rendering 10k+ DOM nodes efficiently (beyond just virtualization)?

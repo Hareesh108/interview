@@ -5,6 +5,9 @@ const removeDuplicates = function (nums) {
   let flag = 0;
   let prev;
 
+  console.log(nums.length / 2,"ll");
+  
+
   for (let num of nums) {
     if (num !== prev) {
       nums[flag] = num;

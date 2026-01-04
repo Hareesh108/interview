@@ -3,10 +3,7 @@ const nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 // IMP
 const removeDuplicates = function (nums) {
   let flag = 0;
-  let prev;
-
-  console.log(nums.length / 2,"ll");
-  
+  let prev;  
 
   for (let num of nums) {
     if (num !== prev) {

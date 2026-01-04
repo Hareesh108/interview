@@ -712,3 +712,45 @@ Here are some real easy-to-medium questions that I was actually asked in intervi
 • How do you handle race conditions in React when multiple API calls fire simultaneously?
 • How would you build a custom hook for data fetching with caching + refetch logic?
 • What would be your approach to rendering 10k+ DOM nodes efficiently (beyond just virtualization)?
+
+
+🚀 Frontend Developer (4+ Years Experience) – Advanced Interview Questions I Faced
+Recently, I interviewed for a Frontend Developer role (4+ years) and noticed the focus was more on depth, architecture, and real-world problem solving rather than just basics. Sharing some advanced frontend questions that came up 👇
+⚙️ Advanced JavaScript
+🔹 Explain closures with a real production use case
+ 🔹 How does event delegation work and why is it useful?
+ 🔹 Explain the JavaScript event loop (call stack, microtasks, macrotasks)
+ 🔹 Difference between deep copy vs shallow copy
+ 🔹 How does this behave in arrow functions vs normal functions?
+ 🔹 What problems can occur due to memory leaks in JS and how do you prevent them?
+⚛️ Advanced React Concepts
+🔹 How does React Fiber improve rendering performance?
+ 🔹 Explain reconciliation in detail and how keys affect it
+ 🔹 Difference between useMemo, useCallback, and React.memo
+ 🔹 How do you avoid unnecessary re-renders in large React apps?
+ 🔹 What happens when you update state inside useEffect?
+ 🔹 How do custom hooks improve scalability and reuse?
+🧠 Architecture & State Management
+🔹 When would you choose Context API vs Redux Toolkit vs local state?
+ 🔹 How do you structure a large-scale frontend application?
+ 🔹 How do you manage derived state efficiently?
+ 🔹 How do you handle cross-component communication without prop drilling?
+⚡ Performance Optimization
+🔹 How does code splitting work in React?
+ 🔹 Difference between lazy loading components vs data
+ 🔹 How do you optimize large lists? (virtualization)
+ 🔹 How do you handle expensive calculations in UI rendering?
+ 🔹 What metrics do you monitor for frontend performance?
+🌐 Browser & Web Fundamentals
+🔹 Explain the Critical Rendering Path
+ 🔹 How does CSS affect rendering performance?
+ 🔹 What is reflow vs repaint?
+ 🔹 How does browser caching work?
+🔐 Security & Best Practices
+🔹 How do you prevent XSS and CSRF attacks?
+ 🔹 How do you securely handle tokens in frontend apps?
+ 🔹 Why is CORS needed and how does it work?
+🧪 Testing & Quality
+🔹 Difference between unit, integration, and E2E testing
+ 🔹 How do you test React hooks and async logic?
+ 🔹 How do you ensure maintainable and scalable code?

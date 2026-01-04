@@ -1,0 +1,106 @@
+[
+  {
+    "name": "public",
+    "isFolder": true,
+    "children": [
+      {
+        "name": "index.html",
+        "isFolder": false
+      },
+      {
+        "name": "favicon.ico",
+        "isFolder": false
+      }
+    ]
+  },
+  {
+    "name": "src",
+    "isFolder": true,
+    "children": [
+      {
+        "name": "assets",
+        "isFolder": true,
+        "children": [
+          {
+            "name": "react.svg",
+            "isFolder": false
+          }
+        ]
+      },
+      {
+        "name": "components",
+        "isFolder": true,
+        "children": [
+          {
+            "name": "Header",
+            "isFolder": true,
+            "children": [
+              {
+                "name": "Header.jsx",
+                "isFolder": false
+              },
+              {
+                "name": "Header.css",
+                "isFolder": false
+              }
+            ]
+          },
+          {
+            "name": "Sidebar",
+            "isFolder": true,
+            "children": [
+              {
+                "name": "Sidebar.jsx",
+                "isFolder": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "hooks",
+        "isFolder": true,
+        "children": [
+          {
+            "name": "useToggle.js",
+            "isFolder": false
+          }
+        ]
+      },
+      {
+        "name": "utils",
+        "isFolder": true,
+        "children": [
+          {
+            "name": "helpers.js",
+            "isFolder": false
+          }
+        ]
+      },
+      {
+        "name": "App.jsx",
+        "isFolder": false
+      },
+      {
+        "name": "main.jsx",
+        "isFolder": false
+      }
+    ]
+  },
+  {
+    "name": "package.json",
+    "isFolder": false
+  },
+  {
+    "name": "vite.config.js",
+    "isFolder": false
+  },
+  {
+    "name": "tailwind.config.js",
+    "isFolder": false
+  },
+  {
+    "name": "README.md",
+    "isFolder": false
+  }
+]

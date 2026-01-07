@@ -754,3 +754,61 @@ Recently, I interviewed for a Frontend Developer role (4+ years) and noticed the
 🔹 Difference between unit, integration, and E2E testing
  🔹 How do you test React hooks and async logic?
  🔹 How do you ensure maintainable and scalable code?
+
+
+ 🚀 Scenario-Based React Interview Questions (For 4–10+ years experience)
+
+🔹 Scenario 1: API is called on every keystroke in a search box
+❓ How will you optimize it?
+ ✅ Answer:
+ Use debounce (via setTimeout or lodash), and trigger API calls inside useEffect.
+ Also cancel previous requests using AbortController.
+📌 Keywords: useEffect, debouncing, API optimization
+
+🔹 Scenario 2: Component re-renders even when props don’t change
+❓ How do you fix unnecessary re-renders?
+ ✅ Answer:
+ Use:
+React.memo for components
+useCallback for functions
+useMemo for expensive calculations
+📌 Prevents reference changes causing re-renders
+
+🔹 Scenario 3: Same API is called in multiple components
+❓ How will you avoid repeated API calls?
+ ✅ Answer:
+Lift state up to parent
+Use Context API or Redux / Zustand
+Or cache data using React Query / SWR
+📌 Shows real-world state management knowledge
+
+🔹 Scenario 4: User navigates quickly, old API calls should cancel
+❓ How do you cancel previous requests?
+ ✅ Answer:
+ Use AbortController inside useEffect cleanup function.
+📌 Prevents race conditions & memory leaks
+
+🔹 Scenario 5: Large list (5k+ items) causes UI lag
+❓ How will you optimize performance?
+ ✅ Answer:
+Use list virtualization (react-window, react-virtualized)
+Memoize row components
+Avoid inline functions in render
+📌 Very common performance question
+
+
+React.js
+ • Difference between useState and useRef
+• How React reconciliation works
+• Controlled vs uncontrolled components
+• Props drilling vs Context API
+• useEffect lifecycle and common mistakes
+• How to optimize performance in React
+
+Next.js 
+• SSR vs SSG vs ISR (real use cases)
+• App Router vs Pages Router
+• How data fetching works in Next.js
+• Middleware use cases
+• Image & font optimization
+• SEO handling in Next.js

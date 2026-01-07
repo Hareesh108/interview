@@ -812,3 +812,21 @@ Next.js
 • Middleware use cases
 • Image & font optimization
 • SEO handling in Next.js
+
+Razorpay is one of the highest-paying fintech product firms in India, with compensation packages for MERN Full Stack roles (1–3 years exp) ranging from ₹26–35+ LPA.
+
+But here is the catch: You can't just be a "React Developer" who knows how to use useEffect. They are looking for Product Engineers who can build scalable, fault-tolerant systems from scratch in under 90 minutes.
+
+Here is the exact 2026 breakdown of the Razorpay MERN interview loop:
+
+📍 Round 0: The Online Assessment (OA) A 90-minute test combining 15 CS Fundamental MCQs (OS, DBMS) and 3 coding problems. Speed is critical here. Expect questions on Sliding Window or Two Pointers.
+
+📍 Round 1: The Machine Coding Round (The Eliminator) This is the make-or-break round. You are given 90 minutes to build a functional UI/App like a Nested Comment System, Trello Board, or Stacked Snackbar.
+
+The Bar: It’s not enough to just "make it work." They check for Component Reusability, State Management (Redux/Context), and Performance Optimization (rendering cycles). If your code isn't modular, you are out.
+
+📍 Round 2: JS Fundamentals & Problem-Solving A deep dive into the "weird" parts of JavaScript. Expect to write polyfills for Promise.all or Function.prototype.bind from scratch. They will grill you on the Event Loop, Closures, and the Critical Rendering Path.
+
+📍 Round 3: System Design (HLD) For SDE-2 roles, you’ll be asked to design systems like a Real-time Notification Service or a Payment Gateway Dashboard. You need to handle Database Schema design (MongoDB vs SQL), API rate limiting, and caching strategies.
+
+Don’t leave your preparation to random YouTube tutorials. 🛑 To clear a bar this high, you need a structured roadmap that covers both the "System Architecture" and the "Full Stack Internals." I have consolidated everything you need into these two focused vaults:

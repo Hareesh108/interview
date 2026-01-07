@@ -21,7 +21,7 @@ export default async function SSGPage() {
           </li>
         ))}
       </ul>
-      <p><a href="/examples">← Back to examples</a></p>
+      <p><a href="/app-examples">← Back to examples</a></p>
     </main>
   );
 }

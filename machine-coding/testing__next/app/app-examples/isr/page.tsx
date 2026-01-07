@@ -19,7 +19,7 @@ export default async function ISRPage() {
           </li>
         ))}
       </ul>
-      <p><a href="/examples">← Back to examples</a></p>
+      <p><a href="/app-examples">← Back to examples</a></p>
     </main>
   );
 }

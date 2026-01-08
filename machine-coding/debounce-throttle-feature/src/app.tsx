@@ -16,6 +16,43 @@ const useDebounce = (text: string, time: number) => {
   return myText;
 };
 
+const useThrottle1 = (value: number, delay: number) => {
+  const [throttledValue, setThrottledValue] = useState(value);
+
+  const lastRun = useRef(Date.now());
+  const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    const now = Date.now();
+    const remaining = delay - (now - lastRun.current);
+
+    if (remaining <= 0) {
+      if (timeout.current) {
+        clearTimeout(timeout.current);
+        timeout.current = null;
+      }
+
+      setThrottledValue(value);
+      lastRun.current = now;
+    } else {
+      if (!timeout.current) {
+        timeout.current = setTimeout(() => {
+          setThrottledValue(value);
+          lastRun.current = Date.now();
+          timeout.current = null;
+        }, remaining);
+      }
+    }
+
+    return () => {
+      if (timeout.current) clearTimeout(timeout.current);
+    };
+  }, [value, delay]);
+
+  return throttledValue;
+};
+
+
 const useThrottle = (text: number, time: number) => {
   const [myThrottleText, setMyThrottleText] = useState(0);
 

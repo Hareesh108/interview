@@ -1,3 +1,21 @@
+const input = {
+  movies: [
+    {
+      id: 123,
+      name: "XYZ",
+      language: ["Hindi", "English"],
+    },
+  ],
+  showtimes: [
+    {
+      movieId: 123,
+      cinemaId: 345,
+      showtime: 1700,
+      availableSeat: 10,
+    },
+  ],
+};
+
 function filterMovies(input, filters) {
   const { languages, showtime, minAvailableSeat } = filters;
 

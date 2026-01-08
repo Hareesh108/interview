@@ -19,7 +19,7 @@ const useDebounce = (text: string, time: number) => {
 const useThrottle1 = (value: number, delay: number) => {
   const [throttledValue, setThrottledValue] = useState(value);
 
-  const lastRun = useRef(Date.now());
+  const lastRun = useRef(0);
   const timeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {

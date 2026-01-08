@@ -1,4 +1,8 @@
-const reverseString = (str) => str.split("").reverse().join("");
+const reverseString = (str) => str.split("").map((item)=>{
+  console.log(typeof item);
+  return item.toUpperCase()
+  
+}).reverse().join("");
 
 console.log(reverseString("Hareesh"));
 

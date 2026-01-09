@@ -23,3 +23,16 @@
 23. Remove a Given Character from a String 
 24. Find the Shortest Word in a String 
 25. Find the Longest Palindromic Substring
+
+
+Key Concepts Being Evaluated:
+1. CSS Fundamentals: Performance implications of animating different CSS properties
+2. FPS (Frames Per Second), What FPS means in web animations, Why 30fps vs 60fps matters , How to calculate frame intervals
+3. requestAnimationFrame vs setTimeout/setInterval, Why rAF is superior for animations (synced with browser repaint)
+4. Throttling Implementation, Understanding that rAF runs at ~60fps by default, How to throttle to 30fps using delta time calculations 
+
+The Deeper Learning: This isn't just about making a ball bounce. It's about understanding:
+Browser rendering pipeline
+Performance optimization
+Frame rate control
+Modern animation best practices

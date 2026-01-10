@@ -858,3 +858,33 @@ Don’t leave your preparation to random YouTube tutorials. 🛑 To clear a bar 
 23. Remove a Given Character from a String 
 24. Find the Shortest Word in a String 
 25. Find the Longest Palindromic Substring
+
+
+The candidate was asked to explain:
+- the hardest system they have owned
+- where it broke in production
+- what constraints shaped the architecture
+- what they would change if rebuilding today
+
+
+𝗥𝗼𝘂𝗻𝗱 𝟭 - 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹
+1️⃣ Explain event loop and how asynchronous tasks are executed in JavaScript.
+ 2️⃣ Implement a custom hook in React that debounces input value.
+ 3️⃣ Create a reusable dropdown component that supports search and multi-select.
+ 4️⃣ How would you optimize React rendering performance in large lists (e.g., 10k+ rows)?
+ 5️⃣ Explain the difference between controlled and uncontrolled components with examples.
+
+𝗥𝗼𝘂𝗻𝗱 𝟮 - 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 / 𝗗𝗲𝘀𝗶𝗴𝗻
+1️⃣ How would you design a scalable React application for a dashboard with 100+ pages?
+ 2️⃣ Explain how code splitting and lazy loading improve performance.
+ 3️⃣ How do you handle API rate limits gracefully on the frontend?
+ 4️⃣ What is hydration in Next.js and when can it cause UI mismatches?
+ 5️⃣ How would you build a component library used by multiple teams?
+ 6️⃣ Explain CSR, SSR, and SSG — when would you use each?
+ 7️⃣ How would you design a frontend architecture that can handle 1M+ users daily?
+
+𝗥𝗼𝘂𝗻𝗱 𝟯 - 𝗠𝗮𝗻𝗮𝗴𝗲𝗿𝗶𝗮𝗹 / 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹
+1️⃣ Tell me about a time when a critical production bug broke the UI — how did you handle it?
+ 2️⃣ How do you prioritize technical debt vs. new features?
+ 3️⃣ Describe how you handle conflicts with designers or backend teams.
+ 4️⃣ How do you communicate complex technical decisions to non-technical stakeholders?

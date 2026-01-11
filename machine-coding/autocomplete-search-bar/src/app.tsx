@@ -4,16 +4,24 @@ function App() {
   const [text, setText] = useState("");
   const [search, setSearch] = useState();
   const [view, setView] = useState(false);
+  const [cache, setCache] = useState({});
   // console.log(search);
+  console.log("cache", cache);
 
   useEffect(() => {
     const fetchApi = async () => {
+      if (cache[text]) {
+        setSearch(cache[text]);
+        return;
+      }
+
       try {
         const res = await fetch(
           "https://dummyjson.com/recipes/search?q=" + text
         );
         const json = await res.json();
         setSearch(json);
+        setCache((prev) => ({ ...prev, [text]: json }));
       } catch (e) {
         console.log(e);
       }
@@ -21,14 +29,14 @@ function App() {
 
     const timer = setTimeout(() => {
       fetchApi();
-    }, 300);
+    }, 500);
     console.log("outer", timer);
 
     return () => {
       console.log("inner", timer);
       clearTimeout(timer);
     };
-  }, [text]);
+  }, [cache, text]);
 
   return (
     <div className="max-w-xl mx-auto mt-20">
@@ -43,19 +51,18 @@ function App() {
         />
       </div>
 
-      <div className="border max-h-72 overflow-y-scroll">
-        {search?.recipes?.map((item) => (
-          <button
-            key={item.id}
-            className="hover:bg-red-300 block w-full text-start px-1 py-1 cursor-pointer"
-            onClick={() => {
-              setText(item.name);
-            }}
-          >
-            {item.name}
-          </button>
-        ))}
-      </div>
+      {view && (
+        <div className="border max-h-72 overflow-y-scroll">
+          {search?.recipes?.map((item) => (
+            <div
+              key={item.id}
+              className="hover:bg-pink-300 px-1 py-1 cursor-pointer"
+            >
+              {item.name}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -888,3 +888,63 @@ The candidate was asked to explain:
  2️⃣ How do you prioritize technical debt vs. new features?
  3️⃣ Describe how you handle conflicts with designers or backend teams.
  4️⃣ How do you communicate complex technical decisions to non-technical stakeholders?
+
+
+
+ New questions are added every week.
+
+- Tic Tac Toe game with a bot
+- Implement the Feature Flag component in React
+- Multi-Stepper component in React
+- Switch-Case component in React
+- Implement Infinite Scroll in React
+- Two-step login form in React
+- Editable todo-list with Tabs and expiry time in React
+- Search with pagination in ReactJS
+- Responsive slideshow in ReactJS
+- Create a responsive slideshow gallery in ReactJS
+- Create a lightbox (modal-image-gallery) in ReactJS
+- Functional modal component in ReactJS
+- Detect overlapping circles in React
+- Animate elements in a sequence
+- Preview zoomed image on Hover
+- Search with Autocomplete - React
+- Image auto carousel in React
+- Search with autosuggestion in VanillaJS
+- Pagination component in React
+- Typing effect component in ReactJS
+- Scroll indicator in React
+- Toggle switch in React
+- Capture the product visible on the viewport when the user stops scrolling
+- Create a website walkthrough assistant in JavaScript
+- Number increment counter in React
+- Highlight text on selection in React
+- Batch api calls in sequence in React
+- Time in human-readable format in React
+- Image comparison slider in React
+- Preview selected color from swatches
+- Code a TODO card list
+- Multi-Stepper form in React
+- Create a spinner with CSS
+- Create a grid component in React
+- Create a stacked snack bar in React
+- Create a file explorer in React
+- How to effectively render a large dataset (millions) in React?
+- Create a sortable Todo list with a Drag and Drop option
+- Change the color of the squares in the order clicked
+- Tab component with Lazy loading
+- Create a typing test with invalid character highlighting in React
+- Maintain timer state during page navigation
+- Create a grid of N * N size and incrementally update the cell value on click
+- Draw a circle on click with undo, redo, & reset actions in React
+- Undo grid cell click with a delay
+- Authentication in React Using JWT and OAuth
+- File tree view UI in React with the option to create folders and files in a nested structure
+- Create nested comments in React
+- Create a basic stopwatch in React
+- Accordion in React
+- Accordion group in React
+- Create a nested accordion in React
+- Implement virtualization with vanilla JavaScript
+- Create a reusable select dropdown component with search in React
+- Create a modal with priority in React

@@ -1,0 +1,11 @@
+1. What are the hardest engineering problems you’re solving right now 
+to make a ₹1 brokerage model sustainable?
+
+2. How do you balance performance and cost 
+when building a pro-grade trading system?
+
+3. I’d love to understand where AI has made 
+the biggest difference so far.
+
+4. We have a strange retention problem. 
+No one wants to leave.

@@ -17,6 +17,12 @@ const input = {
 };
 
 function filterMovies(input, filters) {
+
+  // const {movies,showtimes} = input
+  // console.log("movies",movies);
+  // console.log("showtimes",showtimes);
+  
+
   const { languages, showtime, minAvailableSeat } = filters;
 
   const movieMap = {};

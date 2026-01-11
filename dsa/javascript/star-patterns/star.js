@@ -140,3 +140,68 @@ function numberPyramid1(n) {
 }
 
 numberPyramid1(5);
+
+let n = 5;
+
+// Upper half
+for (let i = 1; i <= n; i++) {
+  let row = "";
+
+  // spaces
+  for (let s = 1; s <= n - i; s++) {
+    row += " ";
+  }
+
+  // increasing numbers
+  for (let num = 1; num <= i; num++) {
+    row += num;
+  }
+
+  // decreasing numbers
+  for (let num = i - 1; num >= 1; num--) {
+    row += num;
+  }
+
+  console.log(row);
+}
+
+// Lower half
+for (let i = n - 1; i >= 1; i--) {
+  let row = "";
+
+  for (let s = 1; s <= n - i; s++) {
+    row += " ";
+  }
+
+  for (let num = 1; num <= i; num++) {
+    row += num;
+  }
+
+  for (let num = i - 1; num >= 1; num--) {
+    row += num;
+  }
+
+  console.log(row);
+}
+
+
+// Upper half
+for (let i = 1; i <= n; i++) {
+  const spaces = " ".repeat(n - i);
+
+  const inc = Array.from({ length: i }, (_, idx) => idx + 1).join("");
+  const dec = Array.from({ length: i - 1 }, (_, idx) => i - 1 - idx).join("");
+
+  console.log(spaces + inc + dec);
+}
+
+// Lower half
+for (let i = n - 1; i >= 1; i--) {
+  const spaces = " ".repeat(n - i);
+
+  const inc = Array.from({ length: i }, (_, idx) => idx + 1).join("");
+  const dec = Array.from({ length: i - 1 }, (_, idx) => i - 1 - idx).join("");
+
+  console.log(spaces + inc + dec);
+}
+

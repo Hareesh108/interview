@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [text, setText] = useState("");
-  const [search, setSearch] = useState();
+  const [searchResult, setSearchResult] = useState();
   const [view, setView] = useState(false);
   const [cache, setCache] = useState({});
   // console.log(search);
@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const fetchApi = async () => {
       if (cache[text]) {
-        setSearch(cache[text]);
+        setSearchResult(cache[text]);
         return;
       }
 
@@ -20,8 +20,8 @@ function App() {
           "https://dummyjson.com/recipes/search?q=" + text
         );
         const json = await res.json();
-        setSearch(json);
-        setCache((prev) => ({ ...prev, [text]: json }));
+        setSearchResult(json?.recipes);
+        setCache((prev) => ({ ...prev, [text]: json?.recipes }));
       } catch (e) {
         console.log(e);
       }
@@ -53,7 +53,7 @@ function App() {
 
       {view && (
         <div className="border max-h-72 overflow-y-scroll">
-          {search?.recipes?.map((item) => (
+          {searchResult?.map((item) => (
             <div
               key={item.id}
               className="hover:bg-pink-300 px-1 py-1 cursor-pointer"

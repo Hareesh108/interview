@@ -93,7 +93,7 @@ This experience reinforced that understanding the client’s needs and deliverin
 
 ### Impact → Your role → How you achieved it → What it says about you
 
--Situation:
+- Situation:
 One of the accomplishments I’m most proud of was leading the frontend delivery of a critical feature that had direct impact on user experience and business metrics.
 
 - Task:

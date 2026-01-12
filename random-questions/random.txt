@@ -948,3 +948,38 @@ The candidate was asked to explain:
 - Implement virtualization with vanilla JavaScript
 - Create a reusable select dropdown component with search in React
 - Create a modal with priority in React
+
+
+ost people start DSA prep by solving 500+ random questions. I did too. Until I realized it’s not about quantity, but about patterns and clarity.
+.
+.
+What interviewers actually look for:
+- How fast you recognize the underlying pattern
+- Whether your thinking is structured, not rushed
+- If you can justify time & space trade-offs
+- How you react when the problem slightly changes
+
+What changed my DSA prep:
+- Studied one pattern at a time and exhausted it before switching
+- Wrote solutions on paper first to build clear thinking
+- Focused on explaining out loud, not just getting AC
+- Maintained a mistake log and revised it weekly
+
+Patterns I strengthened deeply:
+- Sliding window for optimization problems
+- Two pointers for arrays & strings
+- Hashing for frequency & lookup logic
+- Trees for recursive thinking
+- Graph traversal for real-world problem modeling
+
+Must-solve LeetCode questions (for clarity, not memorization):
+1. Maximum Subarray
+2. Valid Parentheses
+3. Rotate Array
+4. Lowest Common Ancestor
+5. Course Schedule
+6. Clone Graph
+7. Top K Frequent Elements
+8. Subarray Sum Equals K
+9. Implement Trie
+10. LRU Cache

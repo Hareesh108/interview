@@ -1,6 +1,15 @@
 # Questions
 
-## 1. Tell me about a time when you had to work closely with someone you didn't come along well. What did you do?
+## What was your role in your previous company?
+
+### Title → Scope → Ownership → Impact
+
+- In my previous role, I worked as a Frontend Engineer, primarily responsible for building and maintaining scalable UI components.
+- I collaborated closely with designers, backend engineers, and QA to deliver features end-to-end.
+- I also took ownership of code quality, performance improvements, and supporting production releases.
+- Overall, my role involved both hands-on development and contributing to team-level improvements.
+
+## Tell me about a time when you had to work closely with someone you didn't come along well. What did you do?
 
 ### Acknowledge difference → Stay professional → Find common ground → Deliver result
 

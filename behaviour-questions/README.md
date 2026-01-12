@@ -9,6 +9,19 @@
 - I also took ownership of code quality, performance improvements, and supporting production releases.
 - Overall, my role involved both hands-on development and contributing to team-level improvements.
 
+## What lesson(s) have you learned from your previous company?
+
+### Lesson → Example → How it changed you
+
+- One of the biggest lessons I learned is the importance of clear communication and ownership.
+- I saw that when expectations were clear and responsibilities were well-defined, teams moved faster and avoided unnecessary issues.
+
+---
+
+- One important lesson I learned is that deadlines shouldn’t be set in isolation. Early in my experience, I realized that even if I was confident about my own delivery, successful execution depends on the availability and bandwidth of the entire team.
+
+- Since then, I’ve learned to align timelines with teammates, understand dependencies, and set realistic deadlines collaboratively. This has helped improve delivery predictability, reduced last-minute pressure, and strengthened team coordination.
+
 ## Tell me about a time when you had to work closely with someone you didn't come along well. What did you do?
 
 ### Acknowledge difference → Stay professional → Find common ground → Deliver result

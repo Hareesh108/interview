@@ -140,8 +140,8 @@ Enable real-time tracking of user activity across devices and display accurate *
 
 ---
 
-## ✅ Summary
+<!-- ## ✅ Summary
 
-By combining **WebSockets + Redis + periodic heartbeats**, this design ensures a fast, reliable, and scalable **User Activity Status System** that can handle real-time updates efficiently — suitable for any modern social or messaging platform.
+By combining **WebSockets + Redis + periodic heartbeats**, this design ensures a fast, reliable, and scalable **User Activity Status System** that can handle real-time updates efficiently — suitable for any modern social or messaging platform. -->
 
 ---

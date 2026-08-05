@@ -25,3 +25,16 @@ The interview also included output-based questions to assess understanding of:
 * Variable Scope
 * this keyword
 * Promise execution order
+
+
+Instead of multiple rounds and endless discussions, I focused on three questions in the very first call:
+
+→ Walk me through a typical day in your current role.
+→ Why are you looking to make a change?
+→ If this is the right opportunity, how soon can you join?
+
+Those three questions told me almost everything I needed to know.
+
+→ Did the candidate actually understand the role?
+→ Were they moving for the right reasons?
+→ Could they meet the hiring timeline?

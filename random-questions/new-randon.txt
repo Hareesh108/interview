@@ -38,3 +38,23 @@ Those three questions told me almost everything I needed to know.
 → Did the candidate actually understand the role?
 → Were they moving for the right reasons?
 → Could they meet the hiring timeline?
+
+
+Problem Statement
+
+Build a dynamic Accordion component in React.js using the following JSON structure:
+
+- "id"
+- "name" (Accordion title)
+- "strings" (Array of content)
+
+Requirements
+
+✅ Render accordions dynamically from JSON.
+✅ Display "name" as the accordion header.
+✅ Render the "strings" array as the accordion content.
+✅ Expand/Collapse on header click.
+✅ Use "id" as the React "key".
+✅ Write clean, reusable, and optimized code.
+
+Although I couldn't complete the task within the interview, it was a valuable learning experience. Live coding tests not only evaluate coding skills but also debugging, time management, and problem-solving under pressure.

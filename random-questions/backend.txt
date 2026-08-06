@@ -1,0 +1,9 @@
+me of the interesting questions discussed were:
+
+✅ Explain a complex production issue you solved.
+✅ Why did the application become slow only during peak load?
+✅ How do database indexes impact query performance?
+✅ Why wasn't the performance issue identified before production?
+✅ How do you decide when to create or modify an index?
+✅ How do you prevent similar production issues in the future?
+✅ Did your team improve the development process after the incident?

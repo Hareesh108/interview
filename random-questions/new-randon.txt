@@ -36,7 +36,7 @@ Instead of multiple rounds and endless discussions, I focused on three questions
 Those three questions told me almost everything I needed to know.
 
 → Did the candidate actually understand the role?
-→ Were they moving for the right reasons?
+→ Were they moving for the right reasons?~
 → Could they meet the hiring timeline?
 
 

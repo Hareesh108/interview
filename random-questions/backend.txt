@@ -24,4 +24,3 @@ Please learn:
 - factory, decorator, singleton, obeservable design patterns
 - HTTP Lifecycle
 - TDD
-

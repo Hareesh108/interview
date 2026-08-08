@@ -7,3 +7,21 @@ me of the interesting questions discussed were:
 ✅ How do you decide when to create or modify an index?
 ✅ How do you prevent similar production issues in the future?
 ✅ Did your team improve the development process after the incident?
+
+As a backend developer.
+
+Please learn:
+
+- SOLID design principles 
+- Multithreading 
+- Immutability 
+- Streaming , messaging
+- System design (atleast basic LLD)
+- Caching
+- Security 
+- SSL, JWT, OAuth
+- WebSockets
+- factory, decorator, singleton, obeservable design patterns
+- HTTP Lifecycle
+- TDD
+

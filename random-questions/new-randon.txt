@@ -58,3 +58,45 @@ Requirements
 ✅ Write clean, reusable, and optimized code.
 
 Although I couldn't complete the task within the interview, it was a valuable learning experience. Live coding tests not only evaluate coding skills but also debugging, time management, and problem-solving under pressure.
+
+
+🔎 𝐑𝐨𝐮𝐧𝐝 𝟏 (𝐃𝐒𝐀 + 𝐇𝐋𝐃):
+
+1. Dynamic Programming Questions.
+  Questions focusing on Dynamic Programming algorithms and techniques.
+
+2. Design an End-to-End Delivery Tracking System.
+  Design an end-to-end Delivery Tracking System.
+
+🔎 𝐑𝐨𝐮𝐧𝐝 𝟐 (𝐇𝐋𝐃):
+
+1. Design Dropbox From Scratch.
+  Design Dropbox from scratch — with deep dives on requirements, tradeoffs, architectural decisions, schema designs, and further optimizati...
+
+🔎 𝐑𝐨𝐮𝐧𝐝 𝟑 (𝐋𝐋𝐃 + 𝐒𝐲𝐬𝐭𝐞𝐦 𝐃𝐞𝐬𝐢𝐠𝐧 — 𝐢𝐧 𝐩𝐞𝐫𝐬𝐨𝐧):
+
+1. Resume Deep Dive and Service Migration Patterns.
+  Discuss resume projects in detail, focusing on various architectural patterns for migration between microservices.
+
+2. Hands-on Concurrency Coding Problem.
+  Solve a hands-on concurrency coding problem demonstrating multithreading concepts and thread safety.
+
+3. Design Zomato's Core Restaurant and Menu Services.
+  Deep dive on designing Zomato's core services including restaurant services, schema design for menus with item variants and pricing, opti...
+
+🔎 𝐑𝐨𝐮𝐧𝐝 𝟒 (𝐜𝐮𝐥𝐭𝐮𝐫𝐞 𝐟𝐢𝐭 — 𝐢𝐧 𝐩𝐞𝐫𝐬𝐨𝐧):
+
+1. Values and Problem-Solving Mindset.
+  Assessment focused on personal values, thought process, and overall approach to solving problems.®
+
+
+Think about these common interview questions: Accordion, Tabs, Search, Modal
+They all look different.
+But they all become much simpler once you answer one question:
+Who owns this state?
+
+For example:  
+Accordion - Parent owns the active section.
+Tabs - Parent owns the active tab.
+Search - Parent owns the search query.
+Modal - Parent owns whether it's 

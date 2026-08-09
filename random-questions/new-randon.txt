@@ -100,3 +100,60 @@ Accordion - Parent owns the active section.
 Tabs - Parent owns the active tab.
 Search - Parent owns the search query.
 Modal - Parent owns whether it's 
+
+𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗙𝗼𝗰𝘂𝘀 𝗔𝗿𝗲𝗮𝘀
+ • JavaScript Internals
+ • Closures & Prototypes
+ • React/UI Engineering
+ • Machine Coding
+ • HTML & CSS
+ • Browser APIs
+ • Performance Optimization
+ • Accessibility
+ • Frontend System Design
+ • Behavioral & Leadership
+
+
+ 𝗥𝗼𝘂𝗻𝗱 𝟭 - 𝗛𝗥 + 𝗧𝗲𝗰𝗵 𝗦𝗰𝗿𝗲𝗲𝗻𝗶𝗻𝗴:
+They expect you to be clear on:
+- Your background with core CS fundamentals and the systems you've built
+- Projects you have built and the scale/ownership involved
+- Salary expectations and notice period
+- Why Flipkart, team alignment, and growth mindset
+
+Expect questions such as:
+- Walk me through the most complex system you've built
+- What was the hardest bug you debugged in production?
+- How do you approach breaking down an ambiguous problem?
+
+𝗥𝗼𝘂𝗻𝗱 𝟮 - 𝗗𝗦𝗔 / 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗖𝗼𝗱𝗶𝗻𝗴:
+Common tasks:
+- Two medium-to-hard DSA problems (graphs, DP, or sliding window style)
+- Focus on time/space complexity trade-offs, not just a working solution
+- Follow-up questions that change constraints mid-interview
+
+Typical aspects:
+- Solving under a live constraint change (for example, "now the array is a stream")
+- Explaining why you chose one data structure over another
+- Handling edge cases without being prompted
+- Prioritising a working, well-reasoned approach over rushing to code
+
+𝗥𝗼𝘂𝗻𝗱 𝟯 - 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻:
+Topics they go deep into:
+- Designing a system end to end (for example, an order/inventory service at scale)
+- Database choices, sharding, and indexing trade-offs
+- Caching strategies and cache invalidation
+- Handling consistency vs availability trade-offs
+- Queueing, async processing, and failure recovery
+- Capacity estimation and back-of-the-envelope math
+
+Example discussions:
+- How would you design an inventory system that stays consistent during a flash sale?
+- SQL vs NoSQL, and how do you decide for a given access pattern?
+- How do you handle a hot partition when one seller gets 10x traffic overnight?
+
+𝗥𝗼𝘂𝗻𝗱 𝟰 - 𝗛𝗶𝗿𝗶𝗻𝗴 𝗠𝗮𝗻𝗮𝗴𝗲𝗿 / 𝗢𝘄𝗻𝗲𝗿𝘀𝗵𝗶𝗽:
+They ask:
+- Behavioural and project-based questions using a STAR-style format (for example, describing situations where you handled ambiguity or took ownership)
+- System trade-off reasoning and prioritisation-oriented discussions, similar in style to real design decisions under deadline pressure
+- Cultural fit evaluation, including growth mindset, collaboration style, and how you operate under pressure

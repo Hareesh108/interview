@@ -157,3 +157,51 @@ They ask:
 - Behavioural and project-based questions using a STAR-style format (for example, describing situations where you handled ambiguity or took ownership)
 - System trade-off reasoning and prioritisation-oriented discussions, similar in style to real design decisions under deadline pressure
 - Cultural fit evaluation, including growth mindset, collaboration style, and how you operate under pressure
+
+
+𝗖𝗼𝗿𝗲 𝗝𝗮𝘃𝗮 & 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
+1. What are the key features of Java 17?
+2. What is the var keyword? Can it be used with generics?
+3. What is an effectively final variable in Java?
+4. What is a Record class? How do you map query results to Records and fetch the first record?
+5. What is Optional? When should it be used?
+6. What are checked exceptions? Their pros and cons?
+7. How does exception handling work in Spring Boot? What is @ControllerAdvice?
+8. How do you reverse a String without using built-in methods?
+9. Can mutable objects be used as HashMap keys? What issues can arise?
+
+𝗜𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲𝘀 & 𝗢𝗢𝗣:
+10. Can interfaces have private methods? Why are they used?
+11. What types of methods are allowed in an interface?
+12. What if two interfaces have the same default method? How do you resolve it?
+13. What are SOLID principles?
+14. What is LSP (Liskov Substitution Principle)?
+15. What is Factory Design Pattern?
+
+𝗖𝗼𝗻𝗰𝘂𝗿𝗿𝗲𝗻𝗰𝘆 & 𝗠𝘂𝗹𝘁𝗶𝘁𝗵𝗿𝗲𝗮𝗱𝗶𝗻𝗴:
+16. synchronized vs ReentrantLock?
+17. What is volatile in Java?
+18. volatile vs Atomic classes (AtomicInteger, AtomicLong)?
+19. What is CompletableFuture in Java?
+
+𝗦𝘁𝗿𝗲𝗮𝗺𝘀 & 𝗙𝘂𝗻𝗰𝘁𝗶𝗼𝗻𝗮𝗹 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴:
+20. Difference between sequential and parallel Streams? When to use Parallel Streams in production?
+21. Difference between map() and flatMap() with example.
+
+𝗦𝗽𝗿𝗶𝗻𝗴 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 & 𝗦𝗽𝗿𝗶𝗻𝗴 𝗕𝗼𝗼𝘁:
+22. How does Spring Container work?
+23. What is Bean Lifecycle in Spring?
+24. What is @EnableAutoConfiguration?
+25. Difference between @Qualifier and @Primary?
+26. What is IoC vs DI?
+27. What is Dependency Injection? Types?
+28. What are Spring Profiles?
+29. @PathVariable vs @RequestParam?
+30. How does @Transactional work?
+31. Lazy vs Eager Loading?
+
+𝗦𝗽𝗿𝗶𝗻𝗴 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 & 𝗝𝗪𝗧:
+32. What is Spring Security?
+33. How do you implement authentication & authorization in Spring Security?
+34. How is Spring Security handled in microservices architecture?
+35. What is JWT and how is it used for security in your projects?

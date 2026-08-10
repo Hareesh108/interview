@@ -1,0 +1,48 @@
+https://medium.com/@anjaliraheja1850/uber-senior-frontend-engineer-interview-experience-2026-ddc9dd742dbd?postPublishedType=initial
+
+
+High-Level Design
+I designed the overall architecture and then broke the system down into different layers.
+
+Some of the areas we discussed included:
+
+1. API Layer
+
+I defined the major APIs required by the application and discussed the expected request/response structures.
+
+2. Rendering Strategy
+
+We discussed different rendering approaches, including:
+
+CSR
+SSR
+Hybrid rendering
+I explained where each approach could make sense depending on the page and use case.
+
+3. Real-Time Stock Updates
+
+This was one of the more interesting parts of the discussion.
+
+I discussed different approaches for pushing real-time price updates to clients, including:
+
+Polling
+WebSockets
+Server-sent events / real-time event mechanisms
+We discussed the trade-offs between these approaches and why WebSockets could be a better fit for continuously changing stock prices.
+
+4. Performance Optimizations
+
+We also discussed frontend performance and scalability.
+
+Some of the techniques I covered were:
+
+Virtualization for large lists
+Efficient state management
+Caching
+Pagination
+Code splitting
+Lazy loading
+Minimizing unnecessary re-renders
+5. Scalability & Reliability
+
+I also discussed how the frontend architecture could handle a large number of users and continuously changing market data while keeping the UI responsive.

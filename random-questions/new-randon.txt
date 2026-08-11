@@ -205,3 +205,27 @@ They ask:
 33. How do you implement authentication & authorization in Spring Security?
 34. How is Spring Security handled in microservices architecture?
 35. What is JWT and how is it used for security in your projects?
+
+Continuing my series on interview experiences, where I share the lessons, challenges, and takeaways from different stages of my journey.
+
+💻 Online Assessment (OA)
+The OA focused on coding and problem-solving, along with work-style/work-simulation assessments. The exact format can vary depending on the role and hiring cycle.
+
+🏢 Interview Structure (4 Rounds)
+The interview process evaluated candidates across:
+-DSA / Problem Solving
+-Amazon Leadership Principles
+-Frontend System Design
+-AI Fluency
+
+👉 Round 1 – Technical: JavaScript, HTML/CSS & frontend fundamentals.
+👉 Round 2 – Technical: Frontend coding, problem-solving & JavaScript concepts.
+👉 Round 3 – System Design: Frontend architecture, scalability, performance & design decisions.
+👉 Round 4 (Bar Raiser) – Leadership Principles + technical discussion.
+
+📌 Some key highlights:
+-Strong emphasis on JavaScript fundamentals rather than only framework knowledge.
+-Expect practical frontend coding and problem-solving questions.
+-Frontend System Design becomes increasingly important at mid/senior levels.
+-Leadership Principles are evaluated throughout the process, not just in the Bar Raiser.
+-Be prepared to explain your technical decisions, trade-offs and real-world project experience.

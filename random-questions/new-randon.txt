@@ -229,3 +229,30 @@ The interview process evaluated candidates across:
 -Frontend System Design becomes increasingly important at mid/senior levels.
 -Leadership Principles are evaluated throughout the process, not just in the Bar Raiser.
 -Be prepared to explain your technical decisions, trade-offs and real-world project experience.
+
+💡Round 1 – Technical
+ 1️⃣ Write a React component that fetches data from an API and displays it in a table.
+ 2️⃣ What is the difference between state and props in React?
+ 3️⃣ Explain React Hooks and when you would use useEffect vs useLayoutEffect.
+ 4️⃣ How would you optimize a React app for performance?
+ 5️⃣ Explain event delegation in JavaScript.
+ 6️⃣ Write a CSS layout using Flexbox or Grid to make a responsive design.
+ 7️⃣ What are Web Components, and how do they differ from React components?
+ 8️⃣ How would you handle cross-browser compatibility issues?
+ 9️⃣ Explain the Virtual DOM and how React uses it to improve performance.
+
+💡Round 2 – Technical / System Design
+ 1️⃣ How would you design a real-time chat application using React and WebSocket?
+ 2️⃣ Explain the architecture of a frontend-heavy web application you built.
+ 3️⃣ You need to migrate a large legacy JavaScript codebase to TypeScript. How would you approach it?
+ 4️⃣ How do you handle API versioning and inconsistent response formats in your frontend app?
+ 5️⃣ Explain how you would measure and improve frontend performance (e.g., page load, rendering).
+ 6️⃣ How would you design a component library for reuse across multiple projects?
+
+💡Round 3 – Managerial / Behavioral
+ 1️⃣ Tell me about a time you resolved a production bug under tight deadlines.
+ 2️⃣ How do you explain technical frontend concepts to non-technical stakeholders?
+ 3️⃣ How do you manage delivery when a client has unrealistic expectations?
+ 4️⃣ Describe a situation where you had to coordinate with designers, backend engineers, and QA.
+ 5️⃣ What steps do you take to ensure continuous learning in frontend technologies?
+ 6️⃣ How do you prioritize tasks when working under tight deadlines?

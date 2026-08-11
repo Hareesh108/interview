@@ -256,3 +256,24 @@ The interview process evaluated candidates across:
  4️⃣ Describe a situation where you had to coordinate with designers, backend engineers, and QA.
  5️⃣ What steps do you take to ensure continuous learning in frontend technologies?
  6️⃣ How do you prioritize tasks when working under tight deadlines?
+
+ 𝗥𝗘𝗔𝗖𝗧 𝗕𝗔𝗦𝗜𝗖
+1) What is the difference between React.createElement and JSX under the hood?
+2) How does React handle key prop warnings and why do they matter?
+3) What is the difference between a controlled and uncontrolled input in React?
+4) How does React.Children.map differ from a regular array map?
+5) What is the purpose of displayName in React components?
+
+𝗥𝗘𝗔𝗖𝗧 𝗜𝗡𝗧𝗘𝗥𝗠𝗘𝗗𝗜𝗔𝗧𝗘
+1) What is the difference between a Higher Order Component and a custom hook?
+2) How would you implement a render props pattern and when is it still useful?
+3) What is the difference between useTransition and useDeferredValue?
+4) How do you test a component that uses useEffect with React Testing Library?
+5) What is the difference between React portals and rendering inside a parent?
+
+𝗥𝗘𝗔𝗖𝗧 𝗔𝗗𝗩𝗔𝗡𝗖𝗘𝗗
+1) How does React 19 handle form actions and what replaces useState for form state?
+2) What is the use() hook in React 19 and how does it change data fetching patterns?
+3) How would you implement a fully accessible data table with sorting and pagination in React?
+4) How does React handle hydration of server rendered components with async data?
+5) How would you design a React architecture that allows gradual migration from class to functional components?

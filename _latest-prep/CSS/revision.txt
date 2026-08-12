@@ -1,0 +1,59 @@
+Box Model
+→ Content + Padding + Border + Margin
+
+Specificity
+→ Which CSS rule wins?
+
+Display
+→ How does element participate in layout?
+
+Position
+→ Where is element positioned?
+
+z-index
+→ Stacking order + stacking context
+
+Flexbox
+→ 1D layout
+
+Grid
+→ 2D layout
+
+justify-content
+→ Main axis
+
+align-items
+→ Cross axis
+
+flex: 1
+→ Grow + shrink + 0 basis
+
+em
+→ Font-size context
+
+rem
+→ Root font-size
+
+Pseudo-class
+→ State
+
+Pseudo-element
+→ Part/generated content
+
+Margin collapse
+→ Vertical margins can combine
+
+Transition
+→ State change
+
+Animation
+→ Keyframes
+
+Transform
+→ Better choice for many animations
+
+Media Query
+→ Viewport
+
+Container Query
+→ Container

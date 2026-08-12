@@ -277,3 +277,29 @@ The interview process evaluated candidates across:
 3) How would you implement a fully accessible data table with sorting and pagination in React?
 4) How does React handle hydration of server rendered components with async data?
 5) How would you design a React architecture that allows gradual migration from class to functional components?
+
+o:
+“Can you design and reason about a production system?”
+Some of the questions I was asked:
+• Explain Angular Architecture.
+ • Design a Payment Gateway flow.
+ • Explain Design Patterns and Singleton Pattern in Angular.
+ • How would you share data between two Android WebViews?
+ • How would you securely call an API without exposing user credentials?
+ • What are Angular Directives?
+ • What are Decorators?
+ • Explain the Angular Component Lifecycle.
+ • Explain Module Federation.
+ • Application Federation vs Component Federation.
+ • How would you securely store credentials without a backend?
+
+
+ The first round included questions around:
+• JavaScript Hoisting
+ • Angular 19+ features
+ • Signals vs RxJS
+ • Signals in depth
+ • Deep vs Shallow Copy
+ • Micro Frontends
+ • Jasmine/Karma
+ • Coding problems

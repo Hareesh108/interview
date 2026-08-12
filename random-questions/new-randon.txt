@@ -303,3 +303,18 @@ Some of the questions I was asked:
  • Micro Frontends
  • Jasmine/Karma
  • Coding problems
+
+
+
+Interview Preparation Websites:
+
+1. InterviewBit - interviewbit.com
+2. Glassdoor - glassdoor.com
+3. Interviewing.io - interviewing.io
+4. Jobscan Interview Prep - jobscan.co/interview
+5. Indeed Interview Tips - indeed.com/career-advice
+6. CareerCup - careercup.com
+7. The Muse - themuse.com
+8. PrepLounge - preplounge.com
+9. Big Interview - biginterview.com
+10. LinkedIn Learning - linkedin.com/learning

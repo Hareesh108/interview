@@ -1,0 +1,65 @@
+Semantic HTML
+→ Use elements based on their meaning.
+
+async
+→ Execute as soon as downloaded.
+
+defer
+→ Execute after HTML parsing, in order.
+
+div
+→ Generic block-level container.
+
+span
+→ Generic inline container.
+
+section
+→ Thematic section of content.
+
+article
+→ Self-contained content.
+
+a
+→ Navigation.
+
+button
+→ Action.
+
+disabled
+→ Cannot edit, generally not submitted.
+
+readonly
+→ Cannot edit, can be submitted.
+
+id
+→ Unique identifier.
+
+class
+→ Grouping/styling.
+
+name
+→ Form submission field name.
+
+GET
+→ Data in URL.
+
+POST
+→ Data in request body.
+
+label
+→ Accessible name for form control.
+
+alt
+→ Alternative text for images.
+
+ARIA
+→ Additional accessibility information.
+
+DOCTYPE
+→ Standards mode.
+
+preload
+→ Important resource needed now.
+
+prefetch
+→ Resource potentially needed later.

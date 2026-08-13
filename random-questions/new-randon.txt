@@ -368,3 +368,27 @@ after component is rerendered ?
 This was an onsite round and was the most frontend-focused part of the interview.
 
 The task was to build a React autocomplete/search component
+
+JavaScript tries running at 60 frames per second.
+
+We can assume that each frame will take around 16 ms.
+
+The concept is important to understand React's re-rendering impact. 
+
+If rendering takes more than 16 ms, it will look sluggish on the UI.
+
+As React reconciles and update DOM, the browser too has to perform styling, paints, etc.
+
+We can expect the JavaScript window to be 10ms.
+
+On 120hz screen, the 16 ms is reduced to around 8 ms.
+
+For simple applications, it won't look much, but with complex animations and effects, it will likely impact.
+
+To improve React performance:
+
+1. Avoid unnecessary state updates
+2. useTransition and useDeferredValue for non-urgent updates
+3. Virtualize Large Lists
+4. memoize expensive work
+5. Use useRef where possible

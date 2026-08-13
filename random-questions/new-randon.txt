@@ -392,3 +392,11 @@ To improve React performance:
 3. Virtualize Large Lists
 4. memoize expensive work
 5. Use useRef where possible
+
+21. Given an array:
+
+{1, 0, 1, 0, 0, 1, 0, 1}
+
+Move all 0s to the end.
+
+22. Find the middle node of a LinkedList.

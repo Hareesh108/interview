@@ -1,0 +1,1 @@
+https://jon.chrt.dev/2026/04/15/things-you-didnt-know-about-indexes.html

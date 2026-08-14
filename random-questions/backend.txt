@@ -24,3 +24,48 @@ Please learn:
 - factory, decorator, singleton, obeservable design patterns
 - HTTP Lifecycle
 - TDD
+
+
+Most developers prepare Node.js interviews by memorizing questions like:
+
+→ What is Node.js?
+→ What is the Event Loop?
+→ What is middleware?
+→ What are Promises?
+
+These are important.
+But for experienced roles, that's not enough.
+
+Interviewers are increasingly asking practical questions around:
+
+→ Event Loop & concurrency
+→ Streams & backpressure
+→ Worker Threads & child processes
+→ API security
+→ Performance optimization
+→ Memory leaks & debugging
+→ Caching & Redis
+→ Database optimization
+→ Queues & background jobs
+→ Scalability & system design
+→ Production architecture
+
+So I created a **Node.js Interview Guide 2026** covering **130+ interview questions** from fundamentals to real-world scenarios.
+
+I’ve also included scenario-based questions such as:
+
+"Your API latency increased from 200ms to 5 seconds. How would you debug it?"
+
+"Your Node.js server is using 100% CPU. What would you check?"
+
+"How would you scale a Node.js application handling 100K requests per minute?"
+
+These are the types of questions that test whether you can actually build and operate backend systems.
+
+📌 If you're preparing for a:
+
+• Node.js Developer role
+• Backend Developer role
+• MERN Stack Developer role
+• Full Stack Developer role
+• Software Engineer role

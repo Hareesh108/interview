@@ -400,3 +400,80 @@ To improve React performance:
 Move all 0s to the end.
 
 22. Find the middle node of a LinkedList.
+
+
+
+🚀 Capgemini L2 React Interview — Questions You Should Prepare
+
+I recently prepared for a Capgemini L2 round, and these were some of the key topics/questions asked:
+
+1️⃣ React Concurrency
+→ What is concurrent rendering?
+→ Real use case of useTransition/useDeferredValue
+→ How does React prioritise updates?
+
+2️⃣ Currying & Advanced Currying
+→ What is currying?
+→ Partial application vs currying
+→ Infinite/advanced currying implementation
+
+3️⃣ Web Vitals
+→ LCP, CLS, INP
+→ What causes CLS?
+→ How would you improve Web Vitals?
+
+4️⃣ CSS Preprocessor & Postprocessor
+→ SASS/SCSS vs PostCSS
+→ Where and why would you use them?
+→ How does the build pipeline process CSS?
+
+5️⃣ React Performance
+“How would you optimise a React application?”
+
+Be ready to discuss:
+→ Unnecessary re-renders
+→ React.memo
+→ useMemo/useCallback
+→ Code splitting & lazy loading
+→ Virtualisation
+→ API caching
+→ Bundle optimisation
+→ Debouncing/throttling
+
+6️⃣ React 18 Features
+→ Automatic batching
+→ Concurrent rendering
+→ useTransition
+→ useDeferredValue
+→ Suspense improvements
+→ Streaming SSR
+
+7️⃣ React Fiber
+→ What is Fiber?
+→ Render vs Commit phase
+→ Reconciliation
+→ Prioritisation of work
+→ How Fiber enables concurrent features
+
+8️⃣ JavaScript Event Loop
+→ Call Stack
+→ Microtasks
+→ Tasks/Macrotasks
+→ Execution priority
+→ Event-loop starvation
+
+9️⃣ Next.js — Architecture & Rendering Strategies
+→ What are the key features of Next.js?
+→ Why would you choose Next.js over a traditional React SPA?
+→ SSR vs CSR vs SSG vs ISR
+→ When would you use each rendering strategy?
+→ Server Components vs Client Components
+→ Streaming and Suspense
+→ File-based routing
+→ Dynamic routes
+→ API/Route Handlers
+→ Image/font optimisation
+→ Metadata & SEO
+→ Caching and revalidation
+→ Middleware
+→ How would you optimise a Next.js e-commerce application?

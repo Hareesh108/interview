@@ -477,3 +477,37 @@ Be ready to discuss:
 → Caching and revalidation
 → Middleware
 → How would you optimise a Next.js e-commerce application?
+
+
+
+The interview process consisted of four rounds covering JavaScript, React, problem-solving, machine coding, SSR/CSR, Webpack, testing, and behavioral questions.
+
+Unfortunately, the candidate was eliminated in the final round, but the questions provide a good overview of what frontend engineers can expect.
+
+𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗣𝗿𝗼𝗰𝗲𝘀𝘀
+ • Technical Round 1
+ • Technical Round 2 + Machine Coding
+ • Hiring Manager Round
+ • Cross-Functional Round
+
+𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗥𝗼𝘂𝗻𝗱
+Duration: 1 Hour
+
+The first round focused primarily on JavaScript, React, and problem-solving.
+
+1. JavaScript Output-Based Questions
+The interviewer provided JavaScript snippets and asked:
+ • What will be the output?
+ • Why will this output occur?
+ • What happens internally?
+
+Typical areas to prepare include:
+ • Event loop
+ • Closures
+ • Hoisting
+ • this
+ • Promises
+ • async/await
+ • Microtasks and macrotasks
+ • Scope
+ • Type coercion

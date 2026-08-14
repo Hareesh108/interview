@@ -1,0 +1,33 @@
+**Hook**
+
+Ever wondered what actually happens when you run JavaScript?
+
+**Step 1 — Source Code**
+
+First, V8 receives our JavaScript source code.
+
+**Step 2 — Parser**
+
+The parser analyzes the code and creates an **AST — Abstract Syntax Tree**.
+
+**Step 3 — Bytecode**
+
+V8 then generates **bytecode** from that representation.
+
+**Step 4 — Ignition**
+
+The **Ignition interpreter** executes this bytecode.
+
+**Step 5 — Hot Code**
+
+While the code is running, V8 monitors frequently executed code. If some code becomes **hot**, V8 can optimize it.
+
+**Step 6 — TurboFan**
+
+The optimizing compiler, **TurboFan**, converts that hot code into optimized **machine code**.
+
+**Final**
+
+And finally, the **CPU executes that machine code**.
+
+So, simplified: **Source → Parser → AST → Bytecode → Ignition → Hot Code → TurboFan → Machine Code.**

@@ -511,3 +511,56 @@ Typical areas to prepare include:
  • Microtasks and macrotasks
  • Scope
  • Type coercion
+
+
+ Here's your ultimate cheat sheet 
+
+1. Video Streaming 
+Netflix • Amazon Prime • YouTube • Disney+ • Twitch 
+Design a video streaming platform, live streaming service, or video-on-demand system. 
+Key concepts: CDN, adaptive bitrate streaming, video encoding, caching, storage
+
+2. Messaging & Chat 
+WhatsApp • Slack • Messenger • Telegram • Discord 
+Design a real-time chat app or group messaging system. 
+Key concepts: WebSockets, message queues, delivery receipts, presence, E2E encryption
+
+3. Ride-Sharing & Location 
+Uber • Lyft • Ola • Google Maps 
+Design a ride-hailing service or location-tracking system. 
+Key concepts: Geohashing, QuadTrees, matching algorithms, real-time GPS updates
+
+4. E-Commerce & Marketplace 
+Amazon • Flipkart • eBay • Shopify
+Design an online store, cart, or inventory management system. 
+Key concepts: Payment gateways, inventory locking, search, recommendations
+
+5. Social Media & Feed 
+Instagram • Twitter/X • Facebook • LinkedIn • TikTok 
+Design a news feed, follow system, or trending topics. 
+Key concepts: Fan-out (push/pull), timeline generation, sharding, ranking
+
+6. URL Shortener & Utilities
+Bit.ly • TinyURL • Pastebin
+Design a URL shortener or unique ID generator. 
+Key concepts: Hashing, Base62 encoding, key generation, redirection at scale
+
+7. Food Delivery 
+Swiggy • Zomato • DoorDash • Uber Eats
+Design a food ordering & delivery tracking system. 
+Key concepts: Real-time tracking, order state machines, ETA prediction
+
+8. File Storage & Sharing 
+Google Drive • Dropbox • OneDrive
+Design a cloud storage or file-sync service. 
+Key concepts: Chunking, deduplication, conflict resolution, metadata management
+
+9. Notifications & Rate Limiting 
+Push notifications • Email systems • API Rate Limiters
+Design a notification service or rate limiter. 
+Key concepts: Message queues, fan-out, token bucket, sliding window
+
+10. Booking Systems 
+BookMyShow • Airbnb • MakeMyTrip • OpenTable 
+Design a ticket/hotel booking system. 
+Key concepts: Concurrency control, seat locking, distributed transactions

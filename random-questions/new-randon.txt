@@ -564,3 +564,40 @@ Key concepts: Message queues, fan-out, token bucket, sliding window
 BookMyShow • Airbnb • MakeMyTrip • OpenTable 
 Design a ticket/hotel booking system. 
 Key concepts: Concurrency control, seat locking, distributed transactions
+
+Here are some questions asked around JavaScript, React.js and Node.js:
+
+JavaScript
+
+1. Find the maximum number in an array without using "Math.max()":
+
+let arr = [1, 5, 3, 9, 2, 1];
+
+2. Group the following array of objects based on the "hour" property:
+
+let arr = [
+  { hour: 1, data: 'a' },
+  { hour: 2, data: 'b' },
+  { hour: 1, data: 'c' },
+  { hour: 3, data: 'd' },
+  { hour: 2, data: 'e' },
+  { hour: 1, data: 'f' }
+];
+
+3. Can you optimize the above solution and solve it in a single iteration?
+
+React.js
+
+4. What are the different types of Hooks in React.js?
+
+5. What is the difference between "useCallback()" and "useMemo()"?
+
+6. What are Error Boundaries in React.js?
+
+Node.js
+
+7. What is "process.nextTick()" in Node.js?
+
+8. Explain the architecture of Node.js.
+
+9. What are threads? How does Node.js handle threads?

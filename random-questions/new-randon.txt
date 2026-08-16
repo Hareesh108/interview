@@ -623,3 +623,19 @@ Node.js
  2️⃣ How do you handle a disagreement with a designer or backend developer on implementation details?
  3️⃣ Describe a time when your production build caused a major UI issue — what was your response and fix?
  4️⃣ How do you explain frontend performance metrics (like TTI, FCP, CLS) to non-technical stakeholders?
+
+
+ I went through 5 rounds of frontend interviews with a top product-based company last month.
+
+Everyone preps for dynamic programming and graph algorithms, but do you know what actually decided whether I moved to the final round?
+
+It wasn't LeetCode Hard. It was a live coding challenge to build a virtualized list from scratch without external libraries.
+They wanted to see:
+ How I handle DOM recycling and scroll event throttling.
+
+ My understanding of React component lifecycle hooks under heavy re-renders.
+ How I communicate performance bottlenecks out loud.
+
+Here is my biggest takeaway for frontend devs interviewing right now: 
+
+Product companies care less about whether you memorized a sorting algorithm, and more about whether you understand how the browser renders, paints, and repaints.

@@ -601,3 +601,25 @@ Node.js
 8. Explain the architecture of Node.js.
 
 9. What are threads? How does Node.js handle threads?
+
+
+𝗥𝗼𝘂𝗻𝗱 𝟭 - 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹
+1️⃣ How would you design a highly performant web app that renders large data tables with real-time updates?
+ 2️⃣ Explain how you’d reduce the initial page load time of a React application by 40%.
+ 3️⃣ You notice a memory leak in a React app — how would you debug and fix it?
+ 4️⃣ What’s your approach to ensure consistent rendering and layout across different browsers and devices?
+ 5️⃣ How would you structure and optimize a large-scale React codebase to maintain scalability and readability?
+
+𝗥𝗼𝘂𝗻𝗱 𝟮 - 𝗗𝗲𝗲𝗽 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹
+1️⃣ How does React’s reconciliation algorithm (Fiber) work internally, and how does it improve rendering performance?
+ 2️⃣ How would you implement dynamic theming (light/dark mode) in a large web application without performance issues?
+ 3️⃣ A complex dashboard is lagging when users apply filters — how do you profile and optimize it?
+ 4️⃣ How would you design a system to handle client-side caching, API retries, and error boundaries gracefully?
+ 5️⃣ Explain your strategy for managing global state efficiently in a React app with multiple teams contributing to it.
+ 6️⃣ How would you ensure accessibility (a11y) and WCAG compliance in your frontend application?
+
+𝗥𝗼𝘂𝗻𝗱 𝟯 - 𝗠𝗮𝗻𝗮𝗴𝗲𝗿𝗶𝗮𝗹 / 𝗕𝗲𝗵𝗮𝘃𝗶𝗼𝗿𝗮𝗹
+1️⃣ Tell me about a time you delivered a frontend feature under tight deadlines — how did you prioritize and execute?
+ 2️⃣ How do you handle a disagreement with a designer or backend developer on implementation details?
+ 3️⃣ Describe a time when your production build caused a major UI issue — what was your response and fix?
+ 4️⃣ How do you explain frontend performance metrics (like TTI, FCP, CLS) to non-technical stakeholders?

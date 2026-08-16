@@ -639,3 +639,38 @@ They wanted to see:
 Here is my biggest takeaway for frontend devs interviewing right now: 
 
 Product companies care less about whether you memorized a sorting algorithm, and more about whether you understand how the browser renders, paints, and repaints.
+
+
+When you finally get the interview call, do not forget to brush up on these non-negotiable frontend concepts.
+
+Frameworks will change. Libraries will come and go. React itself will keep evolving. But these concepts will remain relevant because they are part of how JavaScript, browsers and the web actually work.
+
+1. Closures and lexical scope: scope, retained variables, practical use cases.
+2. Hoisting and TDZ: var, let, const, declarations vs expressions.
+3. this: regular vs arrow functions, call, apply, bind, constructors.
+4. Prototypes: prototype chain and JavaScript inheritance.
+5. Event loop: call stack, browser APIs, tasks, microtasks, Promises and timers.
+6. Promises and async/await: chaining, errors, parallel vs sequential execution, Promise combinators.
+7. Objects and references: mutation, shallow copy, nested references, cloning.
+8. Type coercion and equality: truthy/falsy, implicit conversion, == vs ===.
+9. Functions as first-class citizens: callbacks, higher-order functions, currying, composition.
+10. Debouncing and throttling: differences, use cases and implementation.
+11. DOM fundamentals: DOM tree, querying, manipulation, attributes vs properties.
+12. Browser events: bubbling, capturing, propagation, preventDefault, stopPropagation.
+13. Event delegation: how bubbling enables efficient event handling.
+14. Browser rendering: DOM, CSSOM, render tree, layout, paint, compositing.
+15. Script loading: normal scripts, async, defer and ES modules.
+16. HTTP fundamentals: methods, status codes, headers, request/response and caching.
+17. Browser networking: DNS, TCP/TLS and what happens after you enter a URL.
+18. CORS and Same-Origin Policy: preflight requests, allowed origins and browser security.
+19. Browser storage: cookies, localStorage, sessionStorage and their trade-offs.
+20. Authentication basics: sessions, tokens, HttpOnly, Secure and SameSite cookies.
+21. Frontend security: XSS, CSRF, sanitisation, token storage and CSP.
+22. Forms: native behaviour, submission, validation, labels and keyboard interaction.
+23. Accessibility: semantic HTML, keyboard navigation, focus, ARIA and screen readers.
+24. Browser history: URLs, query params, History API, pushState and replaceState.
+25. Caching: browser cache, Cache-Control, ETags and CDN caching.
+26. Memory management: garbage collection, listeners, timers, closures and memory leaks.
+27. Async race conditions: stale responses, AbortController and request cancellation.
+28. Performance: critical rendering path, lazy loading, code splitting and bottlenecks.
+29. Web APIs: fetch, timers, Intersection Observer, Resize Observer and Web Storage.

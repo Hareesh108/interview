@@ -1,0 +1,34 @@
+System Design
+
+𝗖𝗼𝗿𝗲 𝗗𝗲𝘀𝗶𝗴𝗻 𝗥𝗼𝘂𝗻𝗱𝘀
+- Design a URL shortener.
+- Design a rate limiter.
+- Design a distributed key-value store like Redis.
+- Design an e-commerce order tracking system.
+- Design a user authentication system.
+- Design a notification service that fans out to email, SMS, and push.
+
+𝗗𝗮𝘁𝗮 𝗟𝗮𝘆𝗲𝗿
+- When do you shard, and what breaks the moment you do?
+- Optimistic vs pessimistic locking. When is each the right call?
+- How do you keep a cache and a database consistent?
+- Read replicas introduce lag. How do you design around it?
+- SQL vs NoSQL, and the actual trade-off behind the answer.
+
+𝗦𝗲𝗿𝘃𝗶𝗰𝗲 𝗟𝗮𝘆𝗲𝗿
+- Synchronous call vs message queue. How do you decide?
+- How do you make an API idempotent?
+- What happens to in-flight requests during a deploy?
+- How do you handle a downstream service that is slow but not down?
+- Retries, backoff, and circuit breakers. Where does each belong?
+
+𝗦𝗰𝗮𝗹𝗲 𝗮𝗻𝗱 𝗥𝗲𝗹𝗶𝗮𝗯𝗶𝗹𝗶𝘁𝘆
+- Where does a load balancer sit, and what does it actually decide?
+- CAP theorem, but explain it with a system you have built.
+- How do you find the bottleneck before the system finds it for you?
+- What do you monitor, and what do you alert on? Not the same list.
+
+𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼 𝗕𝗮𝘀𝗲𝗱
+- Multiple users update the same stock quantity at the same instant. How do you prevent an oversell?
+- Inventory update, payment deduction, and invoice generation must succeed or fail together across three services. How do you design that?
+- Traffic goes up 40x for four hours on sale day, then back to normal. What do you change?

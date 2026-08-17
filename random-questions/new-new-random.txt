@@ -32,3 +32,72 @@ System Design
 - Multiple users update the same stock quantity at the same instant. How do you prevent an oversell?
 - Inventory update, payment deduction, and invoice generation must succeed or fail together across three services. How do you design that?
 - Traffic goes up 40x for four hours on sale day, then back to normal. What do you change?
+
+
+I revisited:
+• JSX & Components
+• Props & State
+• Hooks — useState, useEffect, useMemo, useCallback
+• Context API
+• React Router
+• Redux Toolkit
+• API Integration
+• Performance Optimization
+• Component Reusability & Best Practices
+
+Sharing a few questions that were discussed 👇
+
+🔹 Project Discussion
+
+• Explain your current project and your responsibilities.
+• How is your application structured from frontend to backend?
+• How do you handle communication between different modules?
+• Tell me about a production issue you faced and how you resolved it.
+
+🔹 React.js — Practical Scenarios
+
+👉 You have a React page where changing one filter causes the entire page to re-render. How would you identify what is actually re-rendering and optimize it?
+
+👉 Your application has a complex form with multiple sections. How would you manage the form state and validation without making the component difficult to maintain?
+
+👉 A user clicks the Submit button multiple times and creates duplicate API requests. How would you prevent this?
+
+👉 You need to display continuously updating data on a dashboard. Would you use polling, WebSockets, or another approach? Why?
+
+👉 A component has become 1,000+ lines long. How would you refactor it without breaking existing functionality?
+
+🔹 JavaScript & APIs
+
+• You have 5 APIs that need to execute before rendering a page. How would you handle them efficiently?
+
+• One API fails while the other four succeed. How would you design the error-handling strategy?
+
+• An API response contains thousands of records. Would you process everything on the frontend? What alternatives would you consider?
+
+🔹 Performance
+
+👉 The Lighthouse performance score of a React application is poor.
+
+What would you check first, and what steps would you take to improve it?
+
+👉 A JavaScript function is causing noticeable UI lag.
+
+How would you identify the issue and optimize it?
+
+🔹 Coding / Problem Solving
+
+The coding discussion was also more focused on the approach rather than simply writing code.
+
+The areas discussed included:
+
+✅ Problem-solving approach
+✅ Edge cases
+✅ Time & space complexity
+✅ Code readability
+✅ Production-level improvements
+
+💡 My biggest takeaway:
+
+For experienced React developers, interviewers aren’t only checking whether you know React APIs.
+
+They want to understand how you think, debug, design, optimize, and handle real-world problems.

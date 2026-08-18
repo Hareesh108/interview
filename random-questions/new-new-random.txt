@@ -101,3 +101,24 @@ The areas discussed included:
 For experienced React developers, interviewers aren’t only checking whether you know React APIs.
 
 They want to understand how you think, debug, design, optimize, and handle real-world problems.
+
+
+Building a Nested File/Folder Explorer.
+
+Memory management in React applications.
+
+Most engineers don't think about it — until users start complaining that the app gets slower after 30 minutes of use.
+
+Or until a browser tab crashes.
+Or until a laptop fan won't stop spinning.
+
+Memory leaks in React are rarely caused by one big mistake.
+
+They come from small, overlooked details:
+— a forgotten cleanup in useEffect;
+— an uncleared interval;
+— an unremoved event listener;
+— a WebSocket that never closes;
+— a fetch request that resolves after unmount.
+
+I've spent a lot of time debugging and preventing these issues in production apps.

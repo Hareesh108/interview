@@ -161,3 +161,25 @@ I've spent a lot of time debugging and preventing these issues in production app
 27. How does server-side rendering (SSR) differ from client-side rendering (CSR) in React?
 28. What are React Fiber and Concurrent Mode?
 29. How do you test React components? What are the commonly used testing libraries?
+
+
+
+Round 1 (JS + Algo):
+-> Currying-based output and implementation questions
+-> Problem solving: Find unique employee per organization
+-> Working of Promises (event loop + microtask queue)
+-> React class component lifecycle (mounting → updating → unmounting)
+
+
+Round 2 (Advanced JS + Rendering Concepts):
+-> Reflow vs Repaint in browser rendering
+-> CSS animations: why transform is preferred over other properties
+-> Event propagation: Bubbling vs Capturing, use cases, why it happens
+-> Debounce vs Throttle with polyfill explanations
+-> Write a Promise polyfill with multiple use cases
+
+Round 3 (System Design + High-Level Algo):
+-> Create React-like class components using ES5
+-> Use createInstance to instantiate components without the new keyword
+ > Write an async scheduler that runs async tasks in parallel with max concurrency limit
+-> Big list rendering optimisation: windowing & virtualized lists

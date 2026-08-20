@@ -183,3 +183,38 @@ Round 3 (System Design + High-Level Algo):
 -> Use createInstance to instantiate components without the new keyword
  > Write an async scheduler that runs async tasks in parallel with max concurrency limit
 -> Big list rendering optimisation: windowing & virtualized lists
+
+There’s a difference.
+If I ask:
+“What is a closure?”
+Most people answer:
+“A function that remembers its outer variables.”
+Correct.
+But if I follow up with:
+• Do closures store values or references?
+• Why don’t cyclic references break modern garbage collectors?
+• How can closures accidentally cause memory leaks?
+• What happens to closure variables during mark-and-sweep?
+
+That’s where answers collapse.
+Same with the event loop.
+Everyone says:
+“JS is single-threaded.”
+But senior interviews go into:
+• Microtasks vs macrotasks
+• Event-loop starvation
+• Why Promise callbacks run before setTimeout
+• How to yield control to keep UI responsive
+• Why the event loop belongs to the host environment, not the language
+
+And then further:
+• Hidden classes and inline caching
+• JIT optimization behavior
+• WeakMap vs native private fields
+• structuredClone vs JSON deep copy
+• Module resolution in ESM
+• How ECMAScript defines execution order
+
+This is the difference between “knowing JS” and understanding the engine.
+
+That’s exactly why I wrote The JavaScript Masterbook in a way so that it works a single source of in-depth JS concepts.

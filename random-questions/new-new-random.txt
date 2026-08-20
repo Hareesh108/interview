@@ -218,3 +218,55 @@ And then further:
 This is the difference between “knowing JS” and understanding the engine.
 
 That’s exactly why I wrote The JavaScript Masterbook in a way so that it works a single source of in-depth JS concepts.
+
+
+Frontend Development ≠ Frontend System Design
+Writing React components is only one part of building a frontend.
+
+As applications grow, the bigger questions become:
+→ How should the application be structured?
+→ What belongs in local state vs Redux vs server state?
+→ CSR, SSR or SSG — what should we choose and why?
+→ How do we reduce bundle size and improve loading speed?
+→ How should APIs, caching and authentication be handled?
+→ How do we design reusable components that can scale across teams?
+→ What happens when thousands—or millions—of users access the application?
+
+That’s where Frontend System Design comes in.
+A scalable frontend is not just:
+React → Components → API
+It is an ecosystem:
+User → CDN → Rendering → Routing → Components → State → API Layer → Backend
+supported by caching, security, accessibility, performance monitoring, error handling and a consistent design system.
+
+One principle I find particularly important:
+Not all state belongs in Redux.
+• UI state → useState
+• Shared client state → Redux Toolkit
+• Server state → RTK Query / React Query
+• URL state → Router
+• Persistent preferences → localStorage / cookies
+
+Learning frontend system design changes the question from:
+“How do I build this feature?”
+to:
+“How do I build this feature so it remains fast, maintainable and scalable as the product grows?”
+That shift in thinking is what separates simply building interfaces from engineering frontend systems.
+
+
+Today’s Frontend Interview Experience 🚀
+Had a Frontend Developer interview today. These were the questions asked:
+
+Q1. How do you identify and optimize a slow-loading page?
+Q2. If an API is giving a slow response, how do you debug what the problem is?
+Q3. What is the difference between let and var?
+Q4. What is the difference between map() and filter()?
+Q5. Identify the problem in this code:
+function fetchScore() 
+{ return new Promise((resolve) => { setTimeout(() => resolve(50), 100); }); } 
+function getUserScore() { const score = fetchScore(); return score * 2; } console.log(getUserScore()); 
+
+Q6. What will be the output?
+const array1 = [1, 0, 2, 3, 4]; const array2 = [3, 5, 6, 7, 8, 13]; // Output: [4, 5, 8, 10, 12, 13] 
+
+Overall, the interview focused on JavaScript fundamentals, debugging, performance optimization, and problem-solving.

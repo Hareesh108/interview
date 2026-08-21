@@ -270,3 +270,61 @@ Q6. What will be the output?
 const array1 = [1, 0, 2, 3, 4]; const array2 = [3, 5, 6, 7, 8, 13]; // Output: [4, 5, 8, 10, 12, 13] 
 
 Overall, the interview focused on JavaScript fundamentals, debugging, performance optimization, and problem-solving.
+
+𝗥𝗼𝘂𝗻𝗱 𝟭: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗖𝗼𝗱𝗶𝗻𝗴
+
+The problem involved designing a custom data structure with queue-like behaviour, while handling several constraints and edge cases.
+
+The discussion covered:
+
+- Data structure selection
+- Time complexity
+- State transitions
+- Edge cases
+- Tradeoffs
+
+𝗥𝗼𝘂𝗻𝗱 𝟮: 𝗙𝗿𝗼𝗻𝘁𝗲𝗻𝗱 𝗗𝗲𝘀𝗶𝗴𝗻
+
+This was mix of building a problem from scratch and discussing about past projects. Project discussion covered:
+
+- Architecture decisions
+- State management
+- Performance optimization
+- Scalability
+- Technical tradeoffs
+- Lessons learned
+
+𝗥𝗼𝘂𝗻𝗱 𝟯: 𝗛𝗶𝗿𝗶𝗻𝗴 𝗠𝗮𝗻𝗮𝗴𝗲𝗿
+
+Primarily on behavioural questions. The discussion revolved around areas such as:
+
+- Ownership
+- Collaboration
+- Conflict resolution
+- Working under pressure
+- Customer focus
+- Learning from failures
+
+Some questions included:
+
+- Tell me about a difficult project.
+- Describe a disagreement with a teammate.
+- Tell me about a difficult technical tradeoff you made.
+
+Most questions were based on real experiences, so having well-prepared project stories was extremely useful.
+
+𝗥𝗼𝘂𝗻𝗱 𝟰: 𝗕𝗮𝗿 𝗥𝗮𝗶𝘀𝗲𝗿
+
+The Bar Raiser round was slightly different. Instead of focusing primarily on past experiences, the interviewer presented hypothetical situations to understand how to make decisions.
+Examples included:
+
+- How would you handle a critical production issue?
+- What if stakeholders disagreed on priorities?
+- How would you manage technical debt with a tight deadline?
+
+The interviewer was evaluating:
+
+- Decision making
+- Prioritisation
+- Communication
+- Leadership potential

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
 
 export default function ScrollThrottle() {
   const lastCallRef = useRef(0);
@@ -17,11 +17,14 @@ export default function ScrollThrottle() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
 
-      console.log("Scroll Y:", scrollTop);
+      console.log('Scroll Y:', scrollTop);
+
+      console.log('documentHeight', documentHeight);
+      console.log('windowHeight', windowHeight);
 
       // 🔥 Infinite scroll condition
       if (scrollTop + windowHeight >= documentHeight - 200) {
-        console.log("Load more data");
+        console.log('Load more data');
       }
     };
 
@@ -36,16 +39,16 @@ export default function ScrollThrottle() {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
     };
   }, []);
 
   return (
-    <div style={{ height: "200vh", padding: "20px" }}>
+    <div style={{ height: '200vh', padding: '20px' }}>
       <h2>Scroll down 👇</h2>
       <p>Open console to see throttled scroll logs.</p>
     </div>

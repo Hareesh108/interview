@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
-import BasicDebounce from "./components/debounce/basic";
-import OptimizeDebounce from "./components/debounce/optimize";
-import BasicThrottle from "./components/throttle/basic";
+import { useEffect, useRef, useState } from 'react';
+import BasicDebounce from './components/debounce/basic';
+import OptimizeDebounce from './components/debounce/optimize';
+import BasicThrottle from './components/throttle/basic';
 
 const useDebounce = (text: string, time: number) => {
-  const [myText, setMyText] = useState("");
+  const [myText, setMyText] = useState('');
   useEffect(() => {
     const id = setTimeout(() => {
       setMyText(text);
@@ -52,7 +52,6 @@ const useThrottle1 = (value: number, delay: number) => {
   return throttledValue;
 };
 
-
 const useThrottle = (text: number, time: number) => {
   const [myThrottleText, setMyThrottleText] = useState(0);
 
@@ -87,9 +86,9 @@ function App() {
 
   return (
     <>
-      <BasicDebounce />
+      {/* <BasicDebounce /> */}
       {/* <OptimizeDebounce /> */}
-      {/* <BasicThrottle/> */}
+      <BasicThrottle />
     </>
   );
 }

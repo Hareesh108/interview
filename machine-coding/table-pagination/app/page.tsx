@@ -8,9 +8,9 @@ import NumberedBetterEllipsis from '@/components/numbered/better-ellipsis/better
 export default function Home() {
   return (
     <>
-      {/* <Basic />
+      <Basic />
       <Better />
-      <ServerBasic/> */}
+      <ServerBasic />
       <NumberedBasic />
       <NumberedOptimized />
       <NumberedBetterEllipsis />

@@ -12,7 +12,7 @@ Enable real-time tracking of user activity across devices and display accurate *
 
 ---
 
-## 🏗️ High-Level Architecture
+## 🏗️ High-Level Architecture:
 
 **Components:**
 

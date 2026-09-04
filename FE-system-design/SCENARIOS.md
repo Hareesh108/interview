@@ -90,4 +90,22 @@ So my default architecture would be: a shell React app with shared auth, layout,
 
 ---
 
+## Scenario 12 — Designing an Offline-Capable React Application
+
+### **Question**
+
+How would you design a React application that users can continue using when they temporarily lose network connectivity?
+
+### **Spoken Answer**
+
+*“I’d start by identifying which parts of the product need to work offline and which actions can wait until the connection returns. For the application shell and read-heavy data, I’d use a service worker to cache the static assets and recent API responses, with an explicit expiration strategy so stale data does not live forever.
+
+For user actions, I’d write changes to a local queue backed by IndexedDB instead of failing immediately. Each queued operation would have an idempotency key, so retrying it after a reconnect would not create duplicate records. When the browser comes back online, a sync process would replay the queue, update local state, and expose any failures to the user rather than silently dropping them.
+
+I’d also define a conflict policy before implementing synchronization. For simple records, last-write-wins with server timestamps may be enough. For collaborative or high-value data, I’d return version information from the API and require a merge or explicit user resolution when the local and server versions diverge.
+
+In the UI, I’d show whether the user is offline, which changes are pending, and whether synchronization succeeded. I’d test reloads, browser restarts, duplicate retries, expired caches, and conflicts because offline behavior is mainly about preserving user intent safely across unreliable connections.”*
+
+---
+
 End of document.
